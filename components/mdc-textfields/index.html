@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html class="mdc-typography">
+  <head>
+    <meta charset="utf-8">
+    <title>MDC Button (Dynamic)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/oneezy/oneezy-css/1c14f542/oneezy-css.css">
+    <link rel="stylesheet" href="../../styles.css">
+  </head>
+  
+  <body class="mdc-typography">
+<!-- MDC: Text Field (Dynamic)
+----------------------------------------------->
+
+<h1>MDC Textfield (Dynamic)</h1>
+
+<main>
+	
+	<!-- Default 
+	::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+	<article>
+            <section>
+                <h2>Textfield</h2>
+                <h5>Dense</h5>
+                
+                <div class="mdc-textfield-wrapper" 
+                      data-input--class="mdc-textfield__input mdc-textfield--dense" 
+                      data-input--type="text"
+                      data-input--min="0"
+                      data-input--max="10"
+                      data-input--autocomplete="Email"
+                      data-label--text="Email">
+    
+                      <input id="id-that-gets-USED" class="class-name-that-gets-ERASED" type="input-type-that-gets-REPLACED">
+                </div>
+            </section>
+            
+            <section>
+                <h5>Normal</h5>
+                <div class="mdc-textfield-wrapper" 
+                      data-input--class="mdc-textfield__input" 
+                      data-input--type="text"
+                      data-input--min="0"
+                      data-input--max="10"
+                      data-input--autocomplete="Email"
+                      data-label--text="Email">
+    
+                      <input id="another-id-that-gets-USED" class="class-name-that-gets-ERASED" type="input-type-that-gets-REPLACED">
+                </div>
+            </section>
+        </article>
+        
+        <!-- Required 
+        ::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+        <article>
+        <section>
+            <h2>Textfield (Required)</h2>
+            <h5>Dense</h5>
+            
+            <div class="mdc-textfield-wrapper" 
+                  data-input--class="mdc-textfield__input mdc-textfield--dense" 
+                  data-input--type="text"
+                  data-input--min="0"
+                  data-input--max="10"
+                  data-input--autocomplete="Email"
+                  data-label--text="Email"
+                  data-message--text="Enter your Email"
+                  data-required="required">
+    
+                  <input id="id-that-gets-USED" class="class-name-that-gets-ERASED" type="input-type-that-gets-REPLACED">
+            </div>
+        </section>
+        
+        <section>
+            <h5>Normal</h5>
+            
+            <div class="mdc-textfield-wrapper" 
+                  data-input--class="mdc-textfield__input" 
+                  data-input--type="text"
+                  data-input--min="0"
+                  data-input--max="10"
+                  data-input--autocomplete="Email"
+                  data-label--text="Email"
+                  data-message--text="Enter your Email"
+                  data-required="required">
+    
+                  <input id="id-that-gets-USED" class="class-name-that-gets-ERASED" type="input-type-that-gets-REPLACED">
+    
+            </div>
+        </section>
+        </article>
+        
+        <!-- Icons 
+        ::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+        <article>
+            <section>
+                <h2>Textfield (Icons)</h2>
+                <h5>Dense</h5>
+                
+                <div class="mdc-textfield-wrapper" 
+                      data-input--class="mdc-textfield__input mdc-textfield--dense" 
+                      data-input--type="text"
+                      data-input--min="0"
+                      data-input--max="10"
+                      data-input--autocomplete="Email"
+                      data-label--icon="email"
+                      data-label--text="Email"
+                      data-message--text="Enter your Email">
+    
+                      <input id="id-that-gets-USED" class="class-name-that-gets-ERASED" type="input-type-that-gets-REPLACED">
+                </div>
+            </section>
+    
+            <section>
+                <h5>Normal</h5>
+                
+                <div class="mdc-textfield-wrapper" 
+                      data-input--class="mdc-textfield__input" 
+                      data-input--type="text"
+                      data-input--min="0"
+                      data-input--max="10"
+                      data-input--autocomplete="Email"
+                      data-label--icon="email"
+                      data-label--text="Email"
+                      data-message--text="Enter your Email"
+                      data-required="required">
+    
+                      <input id="id-that-gets-USED" class="class-name-that-gets-ERASED" type="input-type-that-gets-REPLACED">
+                </div>
+            </section>
+        </article>
+        
+        <!-- Box 
+        ::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+        <article>
+            <section>
+                <h2>Textfield Box</h2>
+                <h5>Dense</h5>
+                
+                <div class="mdc-textfield-wrapper mdc-textfield--box" 
+                      data-input--class="mdc-textfield__input mdc-textfield--dense" 
+                      data-input--type="text"
+                      data-input--min="0"
+                      data-input--max="10"
+                      data-input--autocomplete="Email"
+                      data-label--icon="email"
+                      data-label--text="Email"
+                      data-message--text="Enter your Email">
+    
+                      <input id="id-that-gets-USED" class="class-name-that-gets-ERASED" type="input-type-that-gets-REPLACED">
+                      <div class="mdc-textfield__bottom-line"></div>
+                </div>
+            </section>
+    
+            <section>
+                <h5>Normal</h5>
+                
+                <div class="mdc-textfield-wrapper mdc-textfield--box" 
+                      data-input--class="mdc-textfield__input" 
+                      data-input--type="text"
+                      data-input--min="0"
+                      data-input--max="10"
+                      data-input--autocomplete="Email"
+                      data-label--icon="email"
+                      data-label--text="Email"
+                      data-message--text="Enter your Email"
+                      data-required="required">
+    
+                      <input id="id-that-gets-USED" class="class-name-that-gets-ERASED" type="input-type-that-gets-REPLACED">
+                      <div class="mdc-textfield__bottom-line"></div>
+                </div>
+            </section>
+        </article>
+        
+        <!-- Textarea 
+        ::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+        <article>
+            <section>
+                <h2>Multi-line Textfields</h2>
+                <h5>Normal</h5>
+                
+                <div class="mdc-textfield-wrapper width-100p" 
+                      data-input--class="mdc-textfield__input width-100p" 
+                      data-input--type="text"
+                      data-input--min="0"
+                      data-input--max="10"
+                      data-input--autocomplete="Email"
+                      data-label--icon="email"
+                      data-label--text="Email"
+                      data-message--text="Enter your Email">
+                    
+                    <textarea id="id-that-gets-USED" class="class-name-that-gets-ERASED"></textarea>
+                </div>
+            </section>
+        </article>
+        
+        
+        <!-- All Types 
+        ::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+        <article>
+            <section>
+                <h2>Textfield (All Types)</h2>
+                <h5>Text</h5>
+                
+                <div class="mdc-textfield-wrapper" 
+                      data-input--class="mdc-textfield__input mdc-textfield--dense" 
+                      data-input--type="text"
+                      data-input--min="0"
+                      data-input--max="10"
+                      data-label--text="Text">
+    
+                      <input id="id-that-gets-USED" class="class-name-that-gets-ERASED" type="input-type-that-gets-REPLACED">
+                </div>
+            </section>
+            
+            <!-- ____________________________________________________________ -->
+            <section>
+                <h5>Number</h5>
+                
+                <div class="mdc-textfield-wrapper" 
+                      data-input--class="mdc-textfield__input mdc-textfield--dense" 
+                      data-input--type="number"
+                      data-input--min="0"
+                      data-input--max="10">
+    
+                      <input id="id-that-gets-USED" class="class-name-that-gets-ERASED" type="input-type-that-gets-REPLACED">
+                </div>
+            </section>
+            
+            <!-- ____________________________________________________________ -->
+            <section>
+                <h5>Date (NEEDS WORK)</h5>
+                <div class="mdc-textfield-wrapper margin-r-3" 
+                      data-input--class="mdc-textfield__input mdc-textfield--dense" 
+                      data-input--type="date"
+                      data-label--text="Start Date"
+                      data-label--icon="today"
+                      data-label--class="mdc-textfield__label--float-above">
+    
+                      <input id="id-that-gets-USED" class="class-name-that-gets-ERASED" type="input-type-that-gets-REPLACED">
+                </div>
+                
+                <div class="mdc-textfield-wrapper" 
+                      data-input--class="mdc-textfield__input mdc-textfield--dense mdc-textfield--focused" 
+                      data-input--type="date"
+                      data-label--text="End Date"
+                      data-label--icon="today"
+                      data-label--class="mdc-textfield__label--float-above">
+    
+                      <input id="id-that-gets-USED" class="class-name-that-gets-ERASED" type="input-type-that-gets-REPLACED">
+                </div>
+            </section>
+            
+            
+            <!-- ____________________________________________________________ -->
+            <section>
+                <h5>Color (NEEDS WORK)</h5>
+                
+                <div class="mdc-textfield-wrapper" 
+                      data-input--class="mdc-textfield__input mdc-textfield--dense" 
+                      data-input--type="color"
+                      data-label--text="Color">
+    
+                      <input id="id-that-gets-USED" class="class-name-that-gets-ERASED" type="input-type-that-gets-REPLACED">
+                </div>
+            </section>
+            
+            
+            <!-- ____________________________________________________________ -->
+            <section>
+                <h5>Datetime Local</h5>
+                
+                <div class="mdc-textfield-wrapper" 
+                      data-input--class="mdc-textfield__input mdc-textfield--dense" 
+                      data-input--type="datetime-local"
+                      data-label--text="Datetime Local"
+                      data-label--class="mdc-textfield__label--float-above">
+    
+                      <input id="id-that-gets-USED" class="class-name-that-gets-ERASED" type="input-type-that-gets-REPLACED">
+                </div>
+            </section>
+            
+            <!-- ____________________________________________________________ -->
+            <section>
+                <h5>Week / Month / Time</h5>
+                
+                <div class="mdc-textfield-wrapper margin-r-3" 
+                      data-input--class="mdc-textfield__input mdc-textfield--dense" 
+                      data-input--type="week"
+                      data-label--text="Week"
+                      data-label--class="mdc-textfield__label--float-above">
+    
+                      <input id="id-that-gets-USED" class="class-name-that-gets-ERASED" type="input-type-that-gets-REPLACED">
+                </div>
+                
+                <div class="mdc-textfield-wrapper margin-r-3" 
+                      data-input--class="mdc-textfield__input mdc-textfield--dense" 
+                      data-input--type="month"
+                      data-label--text="Month"
+                      data-label--class="mdc-textfield__label--float-above">
+    
+                      <input id="id-that-gets-USED" class="class-name-that-gets-ERASED" type="input-type-that-gets-REPLACED">
+                </div>
+                
+                <div class="mdc-textfield-wrapper" 
+                      data-input--class="mdc-textfield__input mdc-textfield--dense" 
+                      data-input--type="time"
+                      data-label--text="Time"
+                      data-label--class="mdc-textfield__label--float-above">
+    
+                      <input id="id-that-gets-USED" class="class-name-that-gets-ERASED" type="input-type-that-gets-REPLACED">
+                </div>
+            </section>
+            
+            <!-- ____________________________________________________________ -->
+            <section>
+                <h5>Email</h5>
+                
+                <div class="mdc-textfield-wrapper" 
+                      data-input--class="mdc-textfield__input mdc-textfield--dense" 
+                      data-input--type="email"
+                      data-input--min="0"
+                      data-input--max="10"
+                      data-label--text="Email"
+                      data-message--text="Enter Your Email"
+                      data-required="required">
+    
+                      <input id="id-that-gets-USED" class="class-name-that-gets-ERASED" type="input-type-that-gets-REPLACED">
+                </div>
+            </section>
+            
+            <!-- ____________________________________________________________ -->
+            <section>
+                <h5>Password</h5>
+                
+                <div class="mdc-textfield-wrapper" 
+                      data-input--class="mdc-textfield__input mdc-textfield--dense" 
+                      data-input--type="password"
+                      data-input--min="0"
+                      data-input--max="10"
+                      data-label--text="Password"
+                      data-message--text="Enter Your Password"
+                      data-required="required">
+    
+                      <input id="id-that-gets-USED" class="class-name-that-gets-ERASED" type="input-type-that-gets-REPLACED">
+                </div>
+            </section>
+            
+            <!-- ____________________________________________________________ -->
+            <section>
+                <h5>Phone Number</h5>
+                
+                <div class="mdc-textfield-wrapper" 
+                      data-input--class="mdc-textfield__input mdc-textfield--dense" 
+                      data-input--type="tel"
+                      data-input--min="0"
+                      data-input--max="10"
+                      data-label--text="Phone Number">
+    
+                      <input id="id-that-gets-USED" class="class-name-that-gets-ERASED" type="input-type-that-gets-REPLACED">
+                </div>
+            </section>
+            
+            <!-- ____________________________________________________________ -->
+            <section>
+                <h5>Search</h5>
+                
+                <div class="mdc-textfield-wrapper" 
+                      data-input--class="mdc-textfield__input mdc-textfield--dense" 
+                      data-input--type="search"
+                      data-label--text="Search">
+    
+                      <input id="id-that-gets-USED" class="class-name-that-gets-ERASED" type="input-type-that-gets-REPLACED">
+                </div>
+            </section>
+            
+            <!-- ____________________________________________________________ -->
+            <section>
+                <h5>URL</h5>
+                
+                <div class="mdc-textfield-wrapper" 
+                      data-input--class="mdc-textfield__input mdc-textfield--dense" 
+                      data-input--type="url"
+                      data-label--text="URL">
+    
+                      <input id="id-that-gets-USED" class="class-name-that-gets-ERASED" type="input-type-that-gets-REPLACED">
+                </div>
+            </section>
+        </article>
+    </main>
+    
+
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="mdc-textfields.js"></script>
+ 
+</html>
