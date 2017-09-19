@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html class="mdc-typography">
+  <head>
+    <meta charset="utf-8">
+    <title>MDC Button (Dynamic)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/oneezy/oneezy-css/1c14f542/oneezy-css.css">
+    <link rel="stylesheet" href="../../styles.css">
+  </head>
+  
+  <body class="mdc-typography">
+    <h1>MDC Button (Dynamic)</h1>
+
+    <main>
+        
+        <!-- Default 
+        ::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+        <article>
+            <h2>Default</h2>
+            
+            <section class="flex-horizontal start-center">
+                <div class="mdc-button-wrapper">
+                    <button type="submit" id="btnSubmit" class="mdc-button mdc-ripple-upgraded" name="btnSubmit" value="Submit" data-key="Submit_Button_string" aria-controls="" style="--mdc-ripple-surface-width:88px; --mdc-ripple-surface-height:36px; --mdc-ripple-fg-size:52.8px; --mdc-ripple-fg-scale:1.99013; --mdc-ripple-fg-translate-start:21.65px, -1.95px; --mdc-ripple-fg-translate-end:17.6px, -8.4px;"><span><span>Submit</span></span></button>
+                </div>
+                
+                <div class="mdc-button-wrapper">
+                    <a href="javascript:void(0)" id="someLink" class="mdc-button mdc-ripple-upgraded" name="linkSubmit" data-key="Link_Button_string" aria-controls="
+                        Link
+                    " style="--mdc-ripple-surface-width:88px; --mdc-ripple-surface-height:36px; --mdc-ripple-fg-size:52.8px; --mdc-ripple-fg-scale:1.99013;"><span>
+                        Link
+                    <span></span></span></a>
+                </div>
+            </section>
+        </article>
+
+        
+        <!-- Text 
+        ::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+        <article>
+            <h2>Text</h2>
+            
+            <section class="flex-horizontal start-center">
+                <div class="mdc-button-wrapper" data-button--text="Baseline">
+                    
+                    <button type="submit" id="btnSubmit" class="mdc-button mdc-ripple-upgraded" name="btnSubmit" value="Submit" data-key="Submit_Button_string" aria-controls="Baseline" style="--mdc-ripple-surface-width:100.388px; --mdc-ripple-surface-height:36px; --mdc-ripple-fg-size:60.2325px; --mdc-ripple-fg-scale:1.93662;"><span>Baseline</span></button>
+                </div>
+                
+                <div class="mdc-button-wrapper" data-button--class="mdc-button--compact" data-button--text="Compact">
+                    
+                    <button type="submit" id="btnSubmit" class="mdc-button mdc-button--compact mdc-ripple-upgraded" name="btnSubmit" value="Submit" data-key="Submit_Button_string" aria-controls="Compact" style="--mdc-ripple-surface-width:88px; --mdc-ripple-surface-height:36px; --mdc-ripple-fg-size:52.8px; --mdc-ripple-fg-scale:1.99013;"><span>Compact</span></button>
+                </div>
+                
+                <div class="mdc-button-wrapper" data-button--class="mdc-button--dense" data-button--text="Dense">
+                    
+                    <button type="submit" id="btnSubmit" class="mdc-button mdc-button--dense mdc-ripple-upgraded" name="btnSubmit" value="Submit" data-key="Submit_Button_string" aria-controls="Dense" style="--mdc-ripple-surface-width:88px; --mdc-ripple-surface-height:32px; --mdc-ripple-fg-size:52.8px; --mdc-ripple-fg-scale:1.96283;"><span>Dense</span></button>
+                </div>
+                
+                <div class="mdc-button-wrapper" data-button--class="mdc-button--accent" data-button--text="Secondary">
+                    
+                    <button type="submit" id="btnSubmit" class="mdc-button mdc-button--accent mdc-ripple-upgraded" name="btnSubmit" value="Submit" data-key="Submit_Button_string" aria-controls="Secondary" style="--mdc-ripple-surface-width:117.412px; --mdc-ripple-surface-height:36px; --mdc-ripple-fg-size:70.4475px; --mdc-ripple-fg-scale:1.8852;"><span>Secondary</span></button>
+                </div>
+                
+                <div class="mdc-button-wrapper">
+                    
+                    <a href="javascript:void(0)" id="someLink" class="mdc-button mdc-ripple-upgraded" name="linkSubmit" data-key="Link_Button_string" aria-controls="
+                        Link
+                    " style="--mdc-ripple-surface-width:88px; --mdc-ripple-surface-height:36px; --mdc-ripple-fg-size:52.8px; --mdc-ripple-fg-scale:1.99013;"><span>
+                        Link
+                    <span></span></span></a>
+                </div>
+                
+                <div class="mdc-button-wrapper" data-button--text="Button Icon" data-button--icon="add">
+                    
+                    <button type="submit" id="btnSubmit" class="mdc-button mdc-ripple-upgraded" name="btnSubmit" value="Submit" data-key="Submit_Button_string" aria-controls="Button Icon" style="display: flex; flex-direction: row; justify-content: center; align-items: center; --mdc-ripple-surface-width:152.825px; --mdc-ripple-surface-height:36px; --mdc-ripple-fg-size:91.695px; --mdc-ripple-fg-scale:1.82134;"><span>Button Icon</span><i class="material-icons">add</i></button>
+                </div>
+                
+                <div class="mdc-button-wrapper" data-button--text="Link Icon" data-button--icon="add">
+                    
+                    <a href="javascript:void(0)" id="someLink" class="mdc-button mdc-ripple-upgraded" name="linkSubmit" data-key="Link_Button_string" aria-controls="Link Icon" style="display: flex; flex-direction: row; justify-content: center; align-items: center; --mdc-ripple-surface-width:127.525px; --mdc-ripple-surface-height:36px; --mdc-ripple-fg-size:76.515px; --mdc-ripple-fg-scale:1.8625;"><span>Link Icon</span><i class="material-icons">add</i></a>
+                </div>
+            </section>
+        </article>
+        
+        <!-- Raised 
+        ::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+        <article>
+            <h2>Raised</h2>
+            
+            <section class="flex-horizontal start-center">
+                <div class="mdc-button-wrapper" data-button--class="mdc-button--raised" data-button--text="Baseline">
+                    
+                    <button type="submit" id="btnSubmit" class="mdc-button mdc-button--raised mdc-ripple-upgraded" name="btnSubmit" value="Submit" data-key="Submit_Button_string" aria-controls="Baseline" style="--mdc-ripple-surface-width:100.388px; --mdc-ripple-surface-height:36px; --mdc-ripple-fg-size:60.2325px; --mdc-ripple-fg-scale:1.93662; --mdc-ripple-fg-translate-start:-6.06626px, -22.8663px; --mdc-ripple-fg-translate-end:20.0775px, -12.1163px;"><span>Baseline</span></button>
+                </div>
+                
+                <div class="mdc-button-wrapper" data-button--class="mdc-button--raised mdc-button--compact" data-button--text="Compact">
+                    
+                    <button type="submit" id="btnSubmit" class="mdc-button mdc-button--raised mdc-button--compact mdc-ripple-upgraded" name="btnSubmit" value="Submit" data-key="Submit_Button_string" aria-controls="Compact" style="--mdc-ripple-surface-width:88px; --mdc-ripple-surface-height:36px; --mdc-ripple-fg-size:52.8px; --mdc-ripple-fg-scale:1.99013;"><span>Compact</span></button>
+                </div>
+                
+                <div class="mdc-button-wrapper" data-button--class="mdc-button--raised mdc-button--dense" data-button--text="Dense">
+                    
+                    <button type="submit" id="btnSubmit" class="mdc-button mdc-button--raised mdc-button--dense mdc-ripple-upgraded" name="btnSubmit" value="Submit" data-key="Submit_Button_string" aria-controls="Dense" style="--mdc-ripple-surface-width:88px; --mdc-ripple-surface-height:32px; --mdc-ripple-fg-size:52.8px; --mdc-ripple-fg-scale:1.96283;"><span>Dense</span></button>
+                </div>
+                
+                <div class="mdc-button-wrapper" data-button--class="mdc-button--raised mdc-button--accent" data-button--text="Secondary">
+                    
+                    <button type="submit" id="btnSubmit" class="mdc-button mdc-button--raised mdc-button--accent mdc-ripple-upgraded" name="btnSubmit" value="Submit" data-key="Submit_Button_string" aria-controls="Secondary" style="--mdc-ripple-surface-width:117.412px; --mdc-ripple-surface-height:36px; --mdc-ripple-fg-size:70.4475px; --mdc-ripple-fg-scale:1.8852;"><span>Secondary</span></button>
+                </div>
+                
+                <div class="mdc-button-wrapper" data-button--class="mdc-button--raised">
+                    
+                    <a href="javascript:void(0)" id="someLink" class="mdc-button mdc-button--raised mdc-ripple-upgraded" name="linkSubmit" data-key="Link_Button_string" aria-controls="
+                        Link
+                    " style="--mdc-ripple-surface-width:88px; --mdc-ripple-surface-height:36px; --mdc-ripple-fg-size:52.8px; --mdc-ripple-fg-scale:1.99013;"><span>
+                        Link
+                    <span></span></span></a>
+                </div>
+                
+                <div class="mdc-button-wrapper" data-button--class="mdc-button--raised" data-button--text="Button Icon" data-button--icon="add">
+                    
+                    <button type="submit" id="btnSubmit" class="mdc-button mdc-button--raised mdc-ripple-upgraded" name="btnSubmit" value="Submit" data-key="Submit_Button_string" aria-controls="Button Icon" style="display: flex; flex-direction: row; justify-content: center; align-items: center; --mdc-ripple-surface-width:152.825px; --mdc-ripple-surface-height:36px; --mdc-ripple-fg-size:91.695px; --mdc-ripple-fg-scale:1.82134;"><span>Button Icon</span><i class="material-icons">add</i></button>
+                </div>
+                
+                <div class="mdc-button-wrapper" data-button--class="mdc-button--raised" data-button--text="Link Icon" data-button--icon="add">
+                    
+                    <a href="javascript:void(0)" id="someLink" class="mdc-button mdc-button--raised mdc-ripple-upgraded" name="linkSubmit" data-key="Link_Button_string" aria-controls="Link Icon" style="display: flex; flex-direction: row; justify-content: center; align-items: center; --mdc-ripple-surface-width:127.525px; --mdc-ripple-surface-height:36px; --mdc-ripple-fg-size:76.515px; --mdc-ripple-fg-scale:1.8625; --mdc-ripple-fg-translate-start:15.1675px, -21.0075px; --mdc-ripple-fg-translate-end:25.505px, -20.2575px;"><span>Link Icon</span><i class="material-icons">add</i></a>
+                </div>
+            </section>
+        </article>	
+        
+        
+        <!-- Unelevated 
+        ::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+        <article>
+            <h2>Unelevated</h2>
+            
+            <section class="flex-horizontal start-center">
+                <div class="mdc-button-wrapper" data-button--class="mdc-button--unelevated" data-button--text="Baseline">
+                    
+                    <button type="submit" id="btnSubmit" class="mdc-button mdc-button--unelevated mdc-ripple-upgraded" name="btnSubmit" value="Submit" data-key="Submit_Button_string" aria-controls="Baseline" style="--mdc-ripple-surface-width:100.388px; --mdc-ripple-surface-height:36px; --mdc-ripple-fg-size:60.2325px; --mdc-ripple-fg-scale:1.93662;"><span>Baseline</span></button>
+                </div>
+                
+                <div class="mdc-button-wrapper" data-button--class="mdc-button--unelevated mdc-button--compact" data-button--text="Compact">
+                    
+                    <button type="submit" id="btnSubmit" class="mdc-button mdc-button--unelevated mdc-button--compact mdc-ripple-upgraded" name="btnSubmit" value="Submit" data-key="Submit_Button_string" aria-controls="Compact" style="--mdc-ripple-surface-width:88px; --mdc-ripple-surface-height:36px; --mdc-ripple-fg-size:52.8px; --mdc-ripple-fg-scale:1.99013;"><span>Compact</span></button>
+                </div>
+                
+                <div class="mdc-button-wrapper" data-button--class="mdc-button--unelevated mdc-button--dense" data-button--text="Dense">
+                    
+                    <button type="submit" id="btnSubmit" class="mdc-button mdc-button--unelevated mdc-button--dense mdc-ripple-upgraded" name="btnSubmit" value="Submit" data-key="Submit_Button_string" aria-controls="Dense" style="--mdc-ripple-surface-width:88px; --mdc-ripple-surface-height:32px; --mdc-ripple-fg-size:52.8px; --mdc-ripple-fg-scale:1.96283;"><span>Dense</span></button>
+                </div>
+                
+                <div class="mdc-button-wrapper" data-button--class="mdc-button--unelevated mdc-button--accent" data-button--text="Secondary">
+                    
+                    <button type="submit" id="btnSubmit" class="mdc-button mdc-button--unelevated mdc-button--accent mdc-ripple-upgraded" name="btnSubmit" value="Submit" data-key="Submit_Button_string" aria-controls="Secondary" style="--mdc-ripple-surface-width:117.412px; --mdc-ripple-surface-height:36px; --mdc-ripple-fg-size:70.4475px; --mdc-ripple-fg-scale:1.8852; --mdc-ripple-fg-translate-start:19.4388px, -8.57376px; --mdc-ripple-fg-translate-end:23.4825px, -17.2237px;"><span>Secondary</span></button>
+                </div>
+                
+                <div class="mdc-button-wrapper" data-button--class="mdc-button--unelevated">
+                    
+                    <a href="javascript:void(0)" id="someLink" class="mdc-button mdc-button--unelevated mdc-ripple-upgraded" name="linkSubmit" data-key="Link_Button_string" aria-controls="
+                        Link
+                    " style="--mdc-ripple-surface-width:88px; --mdc-ripple-surface-height:36px; --mdc-ripple-fg-size:52.8px; --mdc-ripple-fg-scale:1.99013; --mdc-ripple-fg-translate-start:32.85px, -8.75001px; --mdc-ripple-fg-translate-end:17.6px, -8.4px;"><span>
+                        Link
+                    <span></span></span></a>
+                </div>
+                
+                <div class="mdc-button-wrapper" data-button--class="mdc-button--unelevated" data-button--text="Button Icon" data-button--icon="add">
+                    
+                    <button type="submit" id="btnSubmit" class="mdc-button mdc-button--unelevated mdc-ripple-upgraded" name="btnSubmit" value="Submit" data-key="Submit_Button_string" aria-controls="Button Icon" style="display: flex; flex-direction: row; justify-content: center; align-items: center; --mdc-ripple-surface-width:152.825px; --mdc-ripple-surface-height:36px; --mdc-ripple-fg-size:91.695px; --mdc-ripple-fg-scale:1.82134; --mdc-ripple-fg-translate-start:31.4025px, -30.1975px; --mdc-ripple-fg-translate-end:30.565px, -27.8475px;"><span>Button Icon</span><i class="material-icons">add</i></button>
+                </div>
+                
+                <div class="mdc-button-wrapper" data-button--class="mdc-button--unelevated" data-button--text="Link Icon" data-button--icon="add">
+                    
+                    <a href="javascript:void(0)" id="someLink" class="mdc-button mdc-button--unelevated mdc-ripple-upgraded" name="linkSubmit" data-key="Link_Button_string" aria-controls="Link Icon" style="display: flex; flex-direction: row; justify-content: center; align-items: center; --mdc-ripple-surface-width:127.525px; --mdc-ripple-surface-height:36px; --mdc-ripple-fg-size:76.515px; --mdc-ripple-fg-scale:1.8625; --mdc-ripple-fg-translate-start:-2.83251px, -24.6075px; --mdc-ripple-fg-translate-end:25.505px, -20.2575px;"><span>Link Icon</span><i class="material-icons">add</i></a>
+                </div>
+            </section>
+        </article>
+        
+        
+        <!-- Stroke 
+        ::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+        <article>
+            <h2>Stroke</h2>
+            
+            <section class="flex-horizontal start-center">
+                <div class="mdc-button-wrapper" data-button--class="mdc-button--stroked" data-button--text="Baseline">
+                    
+                    <button type="submit" id="btnSubmit" class="mdc-button mdc-button--stroked mdc-ripple-upgraded" name="btnSubmit" value="Submit" data-key="Submit_Button_string" aria-controls="Baseline" style="--mdc-ripple-surface-width:104.388px; --mdc-ripple-surface-height:36px; --mdc-ripple-fg-size:62.6325px; --mdc-ripple-fg-scale:1.92266;"><span>Baseline</span></button>
+                </div>
+                
+                <div class="mdc-button-wrapper" data-button--class="mdc-button--stroked mdc-button--compact" data-button--text="Compact">
+                    
+                    <button type="submit" id="btnSubmit" class="mdc-button mdc-button--stroked mdc-button--compact mdc-ripple-upgraded" name="btnSubmit" value="Submit" data-key="Submit_Button_string" aria-controls="Compact" style="--mdc-ripple-surface-width:89.3375px; --mdc-ripple-surface-height:36px; --mdc-ripple-fg-size:53.6025px; --mdc-ripple-fg-scale:1.98346;"><span>Compact</span></button>
+                </div>
+                
+                <div class="mdc-button-wrapper" data-button--class="mdc-button--stroked mdc-button--dense" data-button--text="Dense">
+                    
+                    <button type="submit" id="btnSubmit" class="mdc-button mdc-button--stroked mdc-button--dense mdc-ripple-upgraded" name="btnSubmit" value="Submit" data-key="Submit_Button_string" aria-controls="Dense" style="--mdc-ripple-surface-width:88px; --mdc-ripple-surface-height:32px; --mdc-ripple-fg-size:52.8px; --mdc-ripple-fg-scale:1.96283;"><span>Dense</span></button>
+                </div>
+                
+                <div class="mdc-button-wrapper" data-button--class="mdc-button--stroked mdc-button--accent" data-button--text="Secondary">
+                    
+                    <button type="submit" id="btnSubmit" class="mdc-button mdc-button--stroked mdc-button--accent mdc-ripple-upgraded" name="btnSubmit" value="Submit" data-key="Submit_Button_string" aria-controls="Secondary" style="--mdc-ripple-surface-width:121.412px; --mdc-ripple-surface-height:36px; --mdc-ripple-fg-size:72.8475px; --mdc-ripple-fg-scale:1.87566;"><span>Secondary</span></button>
+                </div>
+                
+                <div class="mdc-button-wrapper" data-button--class="mdc-button--stroked">
+                    
+                    <a href="javascript:void(0)" id="someLink" class="mdc-button mdc-button--stroked mdc-ripple-upgraded" name="linkSubmit" data-key="Link_Button_string" aria-controls="
+                        Link
+                    " style="--mdc-ripple-surface-width:88px; --mdc-ripple-surface-height:36px; --mdc-ripple-fg-size:52.8px; --mdc-ripple-fg-scale:1.99013;"><span>
+                        Link
+                    <span></span></span></a>
+                </div>
+                
+                <div class="mdc-button-wrapper" data-button--class="mdc-button--stroked" data-button--text="Button Icon" data-button--icon="add">
+                    
+                    <button type="submit" id="btnSubmit" class="mdc-button mdc-button--stroked mdc-ripple-upgraded" name="btnSubmit" value="Submit" data-key="Submit_Button_string" aria-controls="Button Icon" style="display: flex; flex-direction: row; justify-content: center; align-items: center; --mdc-ripple-surface-width:156.825px; --mdc-ripple-surface-height:36px; --mdc-ripple-fg-size:94.095px; --mdc-ripple-fg-scale:1.81629;"><span>Button Icon</span><i class="material-icons">add</i></button>
+                </div>
+                
+                <div class="mdc-button-wrapper" data-button--class="mdc-button--stroked" data-button--text="Link Icon" data-button--icon="add">
+                    
+                    <a href="javascript:void(0)" id="someLink" class="mdc-button mdc-button--stroked mdc-ripple-upgraded" name="linkSubmit" data-key="Link_Button_string" aria-controls="Link Icon" style="display: flex; flex-direction: row; justify-content: center; align-items: center; --mdc-ripple-surface-width:131.525px; --mdc-ripple-surface-height:36px; --mdc-ripple-fg-size:78.915px; --mdc-ripple-fg-scale:1.85469; --mdc-ripple-fg-translate-start:73.63px, -27.4075px; --mdc-ripple-fg-translate-end:26.305px, -21.4575px;"><span>Link Icon</span><i class="material-icons">add</i></a>
+                </div>
+            </section>
+        </article>
+
+
+        <!-- Directional 
+        ::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+        <article>
+            <h2>Directional</h2>
+            
+            <section class="flex-horizontal start-center">
+                <div class="mdc-button-wrapper" data-button--class="mdc-button--unelevated" data-button--text="horizontal" data-button--icon="add" data-button--direction="horizontal">
+                
+                    <button type="submit" id="btnSubmit" class="mdc-button mdc-button--unelevated mdc-ripple-upgraded" name="btnSubmit" value="Submit" data-key="Submit_Button_string" aria-controls="horizontal" style="display: flex; flex-direction: row; justify-content: center; align-items: center; --mdc-ripple-surface-width:146.137px; --mdc-ripple-surface-height:36px; --mdc-ripple-fg-size:87.6825px; --mdc-ripple-fg-scale:1.83054; --mdc-ripple-fg-translate-start:50.2087px, -23.3912px; --mdc-ripple-fg-translate-end:29.2275px, -25.8412px;"><span>horizontal</span><i class="material-icons">add</i></button>
+                </div>
+
+                <div class="mdc-button-wrapper" data-button--class="mdc-button--unelevated" data-button--text="vertical" data-button--icon="add" data-button--direction="vertical">
+                
+                    <button type="submit" id="btnSubmit" class="mdc-button mdc-button--unelevated mdc-ripple-upgraded" name="btnSubmit" value="Submit" data-key="Submit_Button_string" aria-controls="vertical" style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: auto; --mdc-ripple-surface-width:100.338px; --mdc-ripple-surface-height:60px; --mdc-ripple-fg-size:60.2025px; --mdc-ripple-fg-scale:2.10803;"><span>vertical</span><i class="material-icons">add</i></button>
+                </div>
+
+                <div class="mdc-button-wrapper" data-button--class="mdc-button--unelevated" data-button--text="horizontal reverse" data-button--icon="add" data-button--direction="horizontal-reverse">
+                    
+                    <button type="submit" id="btnSubmit" class="mdc-button mdc-button--unelevated mdc-ripple-upgraded" name="btnSubmit" value="Submit" data-key="Submit_Button_string" aria-controls="horizontal reverse" style="display: flex; flex-direction: row-reverse; justify-content: center; align-items: center; --mdc-ripple-surface-width:212.825px; --mdc-ripple-surface-height:36px; --mdc-ripple-fg-size:127.695px; --mdc-ripple-fg-scale:1.76865;"><span>horizontal reverse</span><i class="material-icons">add</i></button>
+                </div>
+
+                <div class="mdc-button-wrapper" data-button--class="mdc-button--unelevated" data-button--text="vertical reverse" data-button--icon="add" data-button--direction="vertical-reverse">
+                
+                    <button type="submit" id="btnSubmit" class="mdc-button mdc-button--unelevated mdc-ripple-upgraded" name="btnSubmit" value="Submit" data-key="Submit_Button_string" aria-controls="vertical reverse" style="display: flex; flex-direction: column-reverse; justify-content: center; align-items: center; height: auto; --mdc-ripple-surface-width:167.025px; --mdc-ripple-surface-height:60px; --mdc-ripple-fg-size:100.215px; --mdc-ripple-fg-scale:1.87073;"><span>vertical reverse</span><i class="material-icons">add</i></button>
+                </div>
+            </section>
+        </article>
+
+        
+        
+    </main>
+
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="mdc-buttons.js"></script>
+    <!-- <script src="https://cdn.rawgit.com/oneezy/mdc-components-dynamic/6050dec8/components/mdc-buttons/mdc-buttons.js"></script> -->
+ 
+</html>

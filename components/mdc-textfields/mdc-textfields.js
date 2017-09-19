@@ -9,9 +9,6 @@ TO DO
 */
 
 
-
-
-
 /* Text Input
 ***********************************/
 function textInput() {
@@ -20,7 +17,7 @@ function textInput() {
       $('.mdc-textfield-wrapper input, .mdc-textfield-wrapper textarea').each(function (){
     
           // Input
-          var inputID	            = $(this).attr("id");
+          var inputID	          = $(this).attr("id");
           var inputCLASS          = $(this).parent().data("input--class");
           var inputTYPE           = $(this).parent().data("input--type");
           var inputAUTOCOMPLETE   = $(this).parent().data("input--autocomplete");
@@ -72,12 +69,12 @@ function textInput() {
           ***********************************/
           // Label Text
           if (typeof labelTEXT !== typeof undefined && labelTEXT !== false) {
-              $(this).parent().append(`<label class="mdc-textfield__label" for="` +inputID+ `">` +labelTEXT+ `</label>`);
+              $(this).parent().append('<label class="mdc-textfield__label" for="' +inputID+ '">' +labelTEXT+ '</label>');
           }
           
            // Label Icon
           if (typeof labelICON !== typeof undefined && labelICON !== false) {
-              $(this).parent().append(`<i class="material-icons mdc-textfield__label">` +labelICON+ `</i>`);
+              $(this).parent().append('<i class="material-icons mdc-textfield__label">' +labelICON+ '</i>');
                 
                  $('.material-icons.mdc-textfield__label').each(function (){
                     $(this).css({"left":"auto", "bottom": "6px", "right": "calc(100% + 4px)"});
@@ -93,7 +90,7 @@ function textInput() {
           ***********************************/
           // Help Message
           if (typeof requiredMESSAGE !== typeof undefined && requiredMESSAGE !== false) {
-              $(this).parent().parent().append(`<p class="mdc-textfield-helptext" id="` +inputID+ `Helptext" aria-hidden="true">` +requiredMESSAGE+ `</p>`);
+              $(this).parent().parent().append('<p class="mdc-textfield-helptext" id="' +inputID+ 'Helptext" aria-hidden="true">' +requiredMESSAGE+ '</p>');
                  $(this).attr("aria-controls", requiredMESSAGE);
           }
           
