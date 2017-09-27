@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="mdc-typography">
+  <head>
+    <meta charset="utf-8">
+    <title>MDC Accordion (Dynamic)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://rawgit.com/oneezy/oneezy-css/master/oneezy-css.css">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../../theme.css">
+    <link rel="stylesheet" href="../mdc-css.css">
+  </head>
+  
+  <body class="mdc-typography">
+
+    <!-- MDC Accordion
+    --------------------------------------------- -->
+
+    <h1>MDC Accordion</h1>
+    
+    <main class="flex-horizontal">
+    
+        <!-- NEW
+        ::::::::::::::::::::::::::::::::::::::::: -->
+        <section class="flex-1">
+            <h2>Accordion Fixed</h2>
+    
+            <div class="mdc-list" data-clone="7" data-accordion="fixed" data-target=".some-link" data-container=".some-container">
+
+                <!-- Accordion Button -->
+                <a class="some-link mdc-list-item" href="javascript:void(0)">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">add</i>Category
+                </a>
+    
+                <!-- Category Items -->
+                <nav class="some-container">
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">keyboard_arrow_right</i>Item
+                    </a>
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">keyboard_arrow_right</i>Item
+                    </a>
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">keyboard_arrow_right</i>Item
+                    </a>
+                </nav>
+                <hr class="mdc-list-divider">
+            </div>
+        </section>
+
+
+        <!-- Accordion Fixed 
+        ::::::::::::::::::::::::::::::::::::::::: -->
+        <section class="flex-1">
+            <h2>Accordion Fixed</h2>
+    
+            <div class="mdc-list" data-clone="7" data-accordion="toggle" data-target=".mdc-list-item" data-container=".yo">
+
+                <!-- Accordion Button -->
+                <a class="mdc-list-item" href="javascript:void(0)">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">add</i>Category
+                </a>
+    
+                <!-- Category Items -->
+                <nav class="yo">
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">keyboard_arrow_right</i>Item
+                    </a>
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">keyboard_arrow_right</i>Item
+                    </a>
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">keyboard_arrow_right</i>Item
+                    </a>
+                </nav>
+                <hr class="mdc-list-divider">
+            </div>
+        </section>
+        
+    </main>
+    
+
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../data-clone/data-clone.js"></script>
+    <script src="mdc-accordion.js"></script>
+ 
+</html>

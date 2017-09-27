@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html class="mdc-typography">
+  <head>
+    <meta charset="utf-8">
+    <title>DATA Animate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://rawgit.com/oneezy/oneezy-css/master/oneezy-css.css">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../../theme.css">
+    <link rel="stylesheet" href="../mdc-css.css">
+  </head>
+  
+  <body class="mdc-typography">
+
+    <!-- DATA Animate
+    --------------------------------------------- -->
+
+    <h1>DATA Animate</h1>
+    
+    <div class="flex-horizontal center-center margin-3">
+        <h2>Data Closest</h2>
+        <div class="flex-vertical">
+            <button data-animate="leftup" data-closest="button">LEFT</button>
+        </div>
+
+        <div class="flex-vertical">
+            <button data-animate="right" data-closest="button">RIGHT</button>
+        </div>
+
+        <div class="flex-vertical">
+            <button data-animate="up" data-closest="button">UP</button>
+        </div>
+
+        <div class="flex-vertical">
+            <button data-animate="down" data-closest="button">DOWN</button>
+        </div>
+
+        <div class="flex-vertical">
+            <button data-animate="shrink" data-closest="button">SHRINK</button>
+        </div>
+
+        <div class="flex-vertical">
+            <button data-animate="grow" data-closest="button">GROW</button>
+        </div>
+    </div>
+
+    <div class="flex-horizontal center-center margin-3">
+        <h2>Data Target</h2>
+        <div class="flex-vertical target-1">
+            <button data-animate="left" data-target=".target-1">LEFT</button>
+        </div>
+
+        <div class="flex-vertical target-2">
+            <button data-animate="right" data-target=".target-2">RIGHT</button>
+        </div>
+
+        <div class="flex-vertical target-3">
+            <button data-animate="up" data-target=".target-3">UP</button>
+        </div>
+
+        <div class="flex-vertical target-4">
+            <button data-animate="down" data-target=".target-4">DOWN</button>
+        </div>
+    </div>
+    
+
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="data-animate.js"></script> 
+
+    </body>
+</html>

@@ -11,7 +11,7 @@ Material Design Components for the Web inserted dynamically w/ a wrapper element
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="stylesheet" href="https://cdn.rawgit.com/oneezy/oneezy-css/1c14f542/oneezy-css.css">
+        <link rel="stylesheet" href="https://rawgit.com/oneezy/oneezy-css/master/oneezy-css.css">
     </head>
 
     <body class="mdc-typography">

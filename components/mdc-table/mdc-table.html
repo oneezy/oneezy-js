@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html class="mdc-typography">
+  <head>
+    <meta charset="utf-8">
+    <title>MDC Table</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://rawgit.com/oneezy/oneezy-css/master/oneezy-css.css">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../../theme.css">
+    <link rel="stylesheet" href="../mdc-css.css">
+  </head>
+  
+  <body class="mdc-typography">
+	<h1>MDC Table</h1>
+
+<!-- 
+	 MDC TABLE
+////////////////////////////////////////////////////// -->
+
+
+<main class="flex-vertical wrapper">
+
+<!-- Table 
+====================================================== -->
+<table class="mdc-table">
+
+<!-- Thead 
+================== -->
+<thead>
+	<tr>
+		<th class="mdc-table--header-details">Product Details</th>
+		<th class="mdc-table--header-qty">Qty</th>
+		<th class="mdc-table--header-price">Price</th>
+		<th class="mdc-table--header-total">Total</th>
+	</tr>
+</thead>
+
+<!-- Tbody 
+================== -->
+<tbody>
+	<tr data-clone="10">
+		
+		<!-- TD WRAPPER: Details
+		=================================== -->
+		<td class="mdc-table--body-details">
+			<section class="flex-horizontal">
+				
+				<div class="flex-vertical tablet-relative desktop-relative">
+					
+					<!-- WRAPPER: IMAGE
+					=================================== -->
+					<div class="mdc-table--body-thumbnail">
+						<a href="javascript:void(0)" class="mdc-image mobile-size-72 tablet-size-112 desktop-size-112">
+							<img src="https://dummyimage.com/200x400/000/fff">
+						</a>
+					</div>
+					
+					
+					<!-- WRAPPER: BUTTONS
+					=================================== -->
+					<div class="mdc-table--body-action-buttons flex-vertical-reverse between-stretch mobile-flex-vertical mobile-center-stretch">
+						
+						<!-- BUTTON: Wishlist -->
+						<button type="submit" data-animate="left" data-closest="tr" data-bg="primary" class="mdc-table--button-wishlist mdc-button mdc-button--dense mdc-button--unelevated flex-horizontal-reverse end-center mdc-button--primary mobile-margin-b-5" aria-controls="Wishlist">
+							<span>Wishlist</span>
+							<i class="material-icons">add_shopping_cart</i>
+						</button>
+
+						<!-- BUTTON: Remove -->
+						<a href="javascript:void(0)" data-animate="right" data-closest="tr" data-bg="secondary" class="mdc-table--button-remove mdc-button mdc-button--dense mdc-button--dark flex-vertical center-center mobile-flex-horizontal-reverse mobile-end-center" aria-controls="Remove">
+							<span class="tablet-none desktop-none">Remove</span>
+							<i class="material-icons">close</i>
+						</a>
+						
+					</div>
+				</div>
+
+
+				<!-- WRAPPER: DETAILS
+				=================================== -->
+				<div class="flex-vertical start-start mobile-center-center width-100p padding-x-1">
+
+					<!-- TEXT: Title
+					::::::::::::::::::::::::::::::::: -->
+					<div class="mdc-table--body-title mdc-typography--title self-start hover-none">
+						<a href="javascript:void(0)">Product Title</a>
+					</div>
+
+					<!-- BUTTON: Details -->
+					<a class="mdc-table--button-details mdc-button flex-horizontal-reverse end-center mdc-button--stroked mdc-button--dense" href="javascript:void(0)" aria-controls="Remove">
+						<span>Details</span>
+						<i class="material-icons">add</i>
+					</a>
+					
+					<!-- TEXT: Details
+					::::::::::::::::::::::::::::::::: -->
+					<div class="mdc-table--body-description none">
+						<p href="javascript:void(0)">A very long description... A very long description... A very long description... A very long description... A very long description... A very long description... A very long description... A very long description... A very long description... A very long description... A very long description... </p>
+					</div>
+
+				</div>
+			</section>
+		</td>
+
+		<!-- Quantity -->
+		<td class="mdc-table--body-qty mobile-flex-horizontal between-base" data-title="Qty">
+			<div class="mdc-table--qty mdc-textfield">
+				<input name="quantity" type="number" value="2" class="mdc-textfield__input input-qty" min="1">
+			</div>
+		</td>
+
+		<!-- Price -->
+		<td class="mdc-table--body-price mobile-flex-horizontal between-base" data-title="Price">
+			<div>
+				<span>$120.00</span>  	
+			</div>
+		</td>
+
+		<!-- Total Price -->
+		<td class="mdc-table--body-total mobile-flex-horizontal between-base" data-title="Total">
+			<div>
+				<span>$240.00</span>
+			</div>
+		</td>
+
+	</tr>
+</tbody>
+</table>
+
+</main>
+
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="../data-clone/data-clone.js"></script>
+	<script src="../data-animate/data-animate.js"></script>
+ 
+</html>

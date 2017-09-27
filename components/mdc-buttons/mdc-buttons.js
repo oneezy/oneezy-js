@@ -27,24 +27,17 @@
 
             // Button
             var buttonCLASS          = $(this).parent().data("button--class");
+            var buttonSTYLE          = $(this).parent().data("button--style");
             var buttonTEXT           = $(this).parent().data("button--text");
             var buttonICON           = $(this).parent().data("button--icon");
             var buttonTYPE           = $(this).parent().data("button--type");
             var buttonARIA           = $(this).parent().data("button--aria");
             var buttonDIRECTION      = $(this).parent().data("button--direction");
 
-            this.className = 'mdc-button';
-            $(this).addClass(buttonCLASS);
-            $(this).css("height","auto");
-            $(this).css("height","unset");
+            
 
             /* Button Properties
             ***********************************/
-            // Button Type
-            if (typeof buttonTYPE !== typeof undefined && buttonTYPE !== false) {
-                $(this).attr("type", buttonTYPE);
-            }
-
             // Button Value
             if (typeof buttonVAL !== typeof undefined && buttonVAL !== false) {
                 $(this).attr("aria-controls", buttonVAL);
@@ -71,22 +64,8 @@
             // Button Icon
             if (typeof buttonICON !== typeof undefined && buttonICON !== false) {
                 $(this).append('<i class="material-icons">' +buttonICON+ '</i>');
-                // $(this).css({
-                //     "display": "-ms-flexbox",
-                //     "-ms-flex-direction": "row",
-                //     "display": "-webkit-flex",
-                //     "-webkit-flex-direction": "row",
-                //     "display": "flex",
-                //     "flex-direction": "row",
-
-                //     "-ms-flex-pack": "center",
-                //     "-webkit-justify-content": "center",
-                //     "justify-content": "center",
-                //     "-ms-flex-align": "center",
-                //     "-webkit-align-items": "center",
-                //     "align-items": "center"
-                // });
             }
+
 
             // Button Direction
             if (buttonDIRECTION === "horizontal") {
@@ -127,9 +106,61 @@
                     "display": "flex",
                     "flex-direction": "column-reverse"
                 });
+                
             } else {
                 
             }
+
+            // Button Type: "Raised"
+            if (buttonTYPE === "raised") {
+                this.className = 'mdc-button mdc-button--raised';
+                $(this).addClass(buttonCLASS);
+                $(this).css("height","auto");
+                $(this).css("height","unset");
+
+            // Button Type: "Flat"
+            } else if (buttonTYPE === "flat") {
+                this.className = 'mdc-button mdc-button--unelevated';
+                $(this).addClass(buttonCLASS);
+                $(this).css("height","auto");
+                $(this).css("height","unset");
+
+            // Button Type: "Stroked"
+            } else if (buttonTYPE === "stroked") {
+                this.className = 'mdc-button mdc-button--stroked';
+                $(this).addClass(buttonCLASS);
+                $(this).css("height","auto");
+                $(this).css("height","unset");
+
+            // Button Type: "FAB"
+            } else if (buttonTYPE === "fab") {
+                this.className = 'mdc-fab';
+                $(this).addClass(buttonCLASS);
+                $(this).find("span").remove();
+
+            // Button Type: "Normal"
+            } else {
+                this.className = 'mdc-button';
+                $(this).addClass(buttonCLASS);
+                $(this).css("height","auto");
+                $(this).css("height","unset");
+            }
+
+            // Button Style: "Compact"
+            if (buttonSTYLE === "compact") {
+                $(this).addClass('mdc-button--compact');
+
+            // Button Style: "Dense"
+            } else if (buttonSTYLE === "dense") {
+                $(this).addClass('mdc-button--dense');
+
+            // Button Style: "Mini"
+            } else if (buttonSTYLE === "mini") {
+                $(this).addClass('mdc-fab--mini');
+
+            } else { 
+
+            } 
 
         });
     }

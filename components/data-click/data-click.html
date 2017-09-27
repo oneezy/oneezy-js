@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html class="mdc-typography">
+  <head>
+    <meta charset="utf-8">
+    <title>DATA Click</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://rawgit.com/oneezy/oneezy-css/master/oneezy-css.css">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../../theme.css">
+    <link rel="stylesheet" href="../mdc-css.css">
+  </head>
+  
+  <body class="mdc-typography" data-change=".me-me-me" data-click=".fb">
+
+    <!-- DATA Click
+    --------------------------------------------- -->
+    <h1>DATA Click</h1>
+    
+    <div class="flex-horizontal margin-3">
+        <div data-change="#ctl27_rpCart_ctl01_Quantity" data-click="#ctl27_rpCart_ctl01_lbtnUpdate">
+            <input type="number" value="2" id="ctl27_rpCart_ctl01_Quantity" class="mdc-textfield__input input-qty" min="1">
+            <a id="ctl27_rpCart_ctl01_lbtnUpdate" href="https://www.google.com" target="_blank">Auto Click (on change)</a>
+        </div>
+    </div>
+    
+    <input type="text" class="me-me-me">
+
+    <a href="https://www.facebook.com" class="fb">Facebook!</a>
+
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="data-click.js"></script> 
+
+    </body>
+</html>
