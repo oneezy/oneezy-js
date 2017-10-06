@@ -20,7 +20,7 @@ Oneezy JS (CSS)
 @import "oneezy-theme.css"; */
 
 /* Dependencies */
-@import "components/data-animate/data-animate.css";
-@import "components/mdc-image/mdc-image.css";
-@import "components/mdc-table/mdc-table.css";
-@import "components/mdc-accordion/mdc-accordion.css";
+@import "https://rawgit.com/oneezy/oneezy-js/master/components/data-animate/data-animate.css";
+@import "https://rawgit.com/oneezy/oneezy-js/master/components/mdc-image/mdc-image.css";
+@import "https://rawgit.com/oneezy/oneezy-js/master/components/mdc-table/mdc-table.css";
+@import "https://rawgit.com/oneezy/oneezy-js/master/components/mdc-accordion/mdc-accordion.css";

@@ -11,20 +11,20 @@ Oneezy JS (JS)
 
     /* Data Components 
     *************************/
-    "components/data-clone/data-clone.js",
-    "components/data-animate/data-animate.js",
-    "components/data-bind/data-bind.js",
-                // "components/data-code/data-code.js",
-    "components/data-event/data-event.js",
+    "https://rawgit.com/oneezy/oneezy-js/master/components/data-clone/data-clone.js",
+    "https://rawgit.com/oneezy/oneezy-js/master/components/data-animate/data-animate.js",
+    "https://rawgit.com/oneezy/oneezy-js/master/components/data-bind/data-bind.js",
+                // "https://rawgit.com/oneezy/oneezy-js/master/components/data-code/data-code.js",
+    "https://rawgit.com/oneezy/oneezy-js/master/components/data-event/data-event.js",
 
     /* MDC Components 
     *************************/
-    "components/mdc-accordion/mdc-accordion.js",
-    "components/mdc-buttons/mdc-buttons.js",
-    "components/mdc-image/mdc-image.js",
-                // "components/mdc-radio/mdc-radio.js",
-    "components/mdc-table/mdc-table.js",
-    "components/mdc-textfields/mdc-textfields.js"
+    "https://rawgit.com/oneezy/oneezy-js/master/components/mdc-accordion/mdc-accordion.js",
+    "https://rawgit.com/oneezy/oneezy-js/master/components/mdc-buttons/mdc-buttons.js",
+    "https://rawgit.com/oneezy/oneezy-js/master/components/mdc-image/mdc-image.js",
+                // "https://rawgit.com/oneezy/oneezy-js/master/components/mdc-radio/mdc-radio.js",
+    "https://rawgit.com/oneezy/oneezy-js/master/components/mdc-table/mdc-table.js",
+    "https://rawgit.com/oneezy/oneezy-js/master/components/mdc-textfields/mdc-textfields.js"
 
 ].forEach(function(src) {
     var script = document.createElement('script');
