@@ -6,8 +6,8 @@ Oneezy JS (JS)
     /* Dependencies 
     *************************/
     "https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js",
-    "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js",
-    "https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js",
+    // "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js",
+    // "https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js",
 
     /* Data Components 
     *************************/
@@ -24,7 +24,7 @@ Oneezy JS (JS)
     "https://rawgit.com/oneezy/oneezy-js/master/components/mdc-image/mdc-image.js",
                 // "https://rawgit.com/oneezy/oneezy-js/master/components/mdc-radio/mdc-radio.js",
     "https://rawgit.com/oneezy/oneezy-js/master/components/mdc-table/mdc-table.js",
-    "https://rawgit.com/oneezy/oneezy-js/master/components/mdc-textfields/mdc-textfields.js"
+    "https://rawgit.com/oneezy/oneezy-js/master/components/mdc-textfields/mdc-textfields.js" 
 
 ].forEach(function(src) {
     var script = document.createElement('script');
