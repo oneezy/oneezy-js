@@ -10,6 +10,7 @@ function dataEvent() {
     var dataTARGET     =   $(this).data("event--target");
     var dataCLOSEST    =   $(this).data("event--closest");
     var dataCLASS      =   $(this).data("event--class");
+    var dataHIDE       =   $(this).data("event--hide");
     var dataACTION     =   $(this).data("event--action");
     var actionTARGET   =   $(this).data("event--action-target");
     var classTARGET    =   $(dataTARGET).attr("event--target-class");
@@ -73,8 +74,11 @@ function dataEvent() {
             }, 2000);
             
         });
-
     }
+
+    if (typeof dataHIDE !== typeof undefined && dataHIDE !== false) {
+        $(dataHIDE).hide();
+    } 
 
     /* Visual Cues... 
     **************************/

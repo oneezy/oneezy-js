@@ -1,5 +1,10 @@
-# mdc-components-dynamic
-Material Design Components for the Web inserted dynamically w/ a wrapper element and data-attributes
+# Oneezy JS
+My personal collection of commonly used javascript.
+
+- Jquery
+- Material Icons
+- Material Design Components (for the web)
+- EnquireJS (to do)
 
 
 ### HTML Setup

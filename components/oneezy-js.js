@@ -17,7 +17,7 @@
     "../mdc-accordion/mdc-accordion.js",
     "../mdc-buttons/mdc-buttons.js",
     "../mdc-image/mdc-image.js",
-    // "../mdc-radio/mdc-radio.js",
+ // "../mdc-radio/mdc-radio.js",
     "../mdc-table/mdc-table.js",
     "../mdc-textfields/mdc-textfields.js"
 
