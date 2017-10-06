@@ -18,8 +18,11 @@
 .animate-grow 		    { animation: animateGROW .22s ease-in-out forwards; }
 .animate-grow:hover 	{ animation: animateGROW .22s ease-in-out forwards; }
 
-.animate-leftup         { animation: animateLEFT .22s ease-in-out forwards, animateUP .22s .22s ease-in-out forwards; }
-.animate-leftup:hover 	{ animation: animateLEFT .22s ease-in-out forwards, animateUP .22s .22s ease-in-out forwards; }
+.animate-leftup         { animation: animateLEFT .22s ease-in-out forwards, tableUP .22s .22s ease-in-out forwards; }
+.animate-leftup:hover 	{ animation: animateLEFT .22s ease-in-out forwards, tableUP .22s .22s ease-in-out forwards; }
+
+.animate-rightup        { animation: animateRIGHT .22s ease-in-out forwards, tableUP .22s .22s ease-in-out forwards; }
+.animate-rightup:hover 	{ animation: animateRIGHT .22s ease-in-out forwards, tableUP .22s .22s ease-in-out forwards; }
 
 
 @keyframes animateLEFT {
@@ -52,8 +55,7 @@
 	100%  { transform: scale(1, 1); opacity: 1; }
 }
 
-/* 
-@keyframes animateUP {
+@keyframes tableUP {
 	0% 	  { transform: scale(1, 1); }
 	100%  { transform: scale(0, 1); height: 0; line-height: 0; padding: 0; margin: 0; border: none; }
-} */
+}

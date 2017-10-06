@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html class="mdc-typography">
+  <head>
+    <meta charset="utf-8">
+    <title>DATA Bind</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../mdc-css.css">
+
+    <style>
+            
+        main        { background: transparent; margin: 0 2rem 2rem !important; }
+        section     { display: flex; flex-direction: column; width: 22%; background: white; margin: 1rem; padding: 1rem; }
+        strong      { display: inline-block; min-width: 80px; }
+        button      { margin: 1rem 0; }
+        h2          { margin: 1rem 0; }
+        p           { font-size: 14px; text-align: justify; }
+        h1 a        { color: skyblue; }
+
+        .CodeMirror { height: auto; }
+        .wrapper    { width: 100%; background: transparent; }
+        .binding    { border: 2px dotted silver; padding: 1rem; background: #eee; }
+        
+    </style>
+  </head>
+  
+  <body class="mdc-typography">
+
+    <!-- DATA Bind
+    --------------------------------------------- -->
+    <h1 class="flex-horizontal between-center">DATA Bind</h1>
+    <main class="flex-vertical start-start wrap">
+
+        <!-- DATA Bind
+        =============================== -->
+        <h2 class="margin-t-3 margin-l-3 padding-t-3">Data Bind</h2>
+
+        <div class="wrapper flex-horizontal start-start wrap">
+
+        <!-- Bind -->
+        <section data-code="htmlmixed">
+
+        <div class="binding" bind="any_name">This div's content will be replaced when you edit the input below</div>
+        <input class="margin-y-1" type="text" placeholder="First input with same bind value" bind="any_name" />
+                
+        </section>
+
+        <!-- Bind -->
+        <section data-code="htmlmixed">
+                
+        <div class="binding" bind="another_name">This div's content will be replaced when you edit the input below</div>
+        <input class="margin-y-1" type="text" placeholder="First input with same bind value" bind="another_name" />
+                
+        </section>
+
+        </div>
+
+    </main>
+
+    <script src="../mdc-js.js"></script>
+    </body>
+</html>

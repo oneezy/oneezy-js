@@ -1,5 +1,3 @@
-
-
 /* Clone Links
 *********************************/
 function dataClone() {

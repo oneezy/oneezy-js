@@ -19,8 +19,10 @@
   document.head.appendChild(script);
 });
 
-/* Initialize Code Mirror
-*********************************/
+
+
+/* WORKING: Initialize Code Mirror
+***********************************/
 function initCodeMirror() {
   
     var codeEDITOR = document.getElementsByClassName("code");
@@ -28,7 +30,6 @@ function initCodeMirror() {
     
     $('[data-code]').each(function (){
       $(this).clone().addClass('temp').appendTo(this);
-      // $(this).clone().addClass('temp').appendTo(this).replaceWith('<textarea class="code">' + $(this).html() +'</textarea>');
     });
 
     $('.temp').each(function (){
@@ -47,7 +48,7 @@ function initCodeMirror() {
 
         // Update textarea
         function updateTextArea() {
-            editor.save();
+          editor.save();
         }
         editor.on('change', updateTextArea);
     });

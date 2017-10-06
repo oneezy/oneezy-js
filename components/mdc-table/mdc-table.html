@@ -4,19 +4,11 @@
     <meta charset="utf-8">
     <title>MDC Table</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://rawgit.com/oneezy/oneezy-css/master/oneezy-css.css">
-    <link rel="stylesheet" href="../../styles.css">
-    <link rel="stylesheet" href="../../theme.css">
     <link rel="stylesheet" href="../mdc-css.css">
   </head>
   
-  <body class="mdc-typography">
-	<h1>MDC Table</h1>
+<body class="mdc-typography">
+<h1>MDC Table</h1>
 
 <!-- 
 	 MDC TABLE
@@ -24,6 +16,7 @@
 
 
 <main class="flex-vertical wrapper">
+<section>
 
 <!-- Table 
 ====================================================== -->
@@ -33,10 +26,10 @@
 ================== -->
 <thead>
 	<tr>
-		<th class="mdc-table--header-details">Product Details</th>
-		<th class="mdc-table--header-qty">Qty</th>
-		<th class="mdc-table--header-price">Price</th>
-		<th class="mdc-table--header-total">Total</th>
+		<th class="flex-1">Product Details</th>
+		<th>Qty</th>
+		<th>Price</th>
+		<th>Total</th>
 	</tr>
 </thead>
 
@@ -47,7 +40,7 @@
 		
 		<!-- TD WRAPPER: Details
 		=================================== -->
-		<td class="mdc-table--body-details">
+		<td class="mdc-table--body-static" data-event="hover-toggle" data-event--closest="tr" data-event--class="active--action-buttons">
 			<section class="flex-horizontal">
 				
 				<div class="flex-vertical tablet-relative desktop-relative">
@@ -66,13 +59,13 @@
 					<div class="mdc-table--body-action-buttons flex-vertical-reverse between-stretch mobile-flex-vertical mobile-center-stretch">
 						
 						<!-- BUTTON: Wishlist -->
-						<button type="submit" data-animate="left" data-closest="tr" data-bg="primary" class="mdc-table--button-wishlist mdc-button mdc-button--dense mdc-button--unelevated flex-horizontal-reverse end-center mdc-button--primary mobile-margin-b-5" aria-controls="Wishlist">
+						<button type="submit" data-animate="leftup" data-animate--closest="tr" data-bg="primary" class="mdc-table--button-wishlist mdc-button mdc-button--dense mdc-button--unelevated flex-horizontal-reverse end-center mdc-button--primary mobile-margin-b-5" aria-controls="Wishlist">
 							<span>Wishlist</span>
 							<i class="material-icons">add_shopping_cart</i>
 						</button>
 
 						<!-- BUTTON: Remove -->
-						<a href="javascript:void(0)" data-animate="right" data-closest="tr" data-bg="secondary" class="mdc-table--button-remove mdc-button mdc-button--dense mdc-button--dark flex-vertical center-center mobile-flex-horizontal-reverse mobile-end-center" aria-controls="Remove">
+						<a href="javascript:void(0)" data-animate="rightup" data-animate--closest="tr" data-bg="secondary" class="mdc-table--button-remove mdc-button mdc-button--dense mdc-button--dark flex-vertical center-center mobile-flex-horizontal-reverse mobile-end-center" aria-controls="Remove">
 							<span class="tablet-none desktop-none">Remove</span>
 							<i class="material-icons">close</i>
 						</a>
@@ -92,7 +85,7 @@
 					</div>
 
 					<!-- BUTTON: Details -->
-					<a class="mdc-table--button-details mdc-button flex-horizontal-reverse end-center mdc-button--stroked mdc-button--dense" href="javascript:void(0)" aria-controls="Remove">
+					<a data-event="click-toggle" data-event--closest="tr" data-event--class="mdc-elevation--z23 active--details" class="mdc-table--button-details mdc-button flex-horizontal-reverse end-center mdc-button--stroked mdc-button--dense" href="javascript:void(0)" aria-controls="Remove">
 						<span>Details</span>
 						<i class="material-icons">add</i>
 					</a>
@@ -108,21 +101,22 @@
 		</td>
 
 		<!-- Quantity -->
-		<td class="mdc-table--body-qty mobile-flex-horizontal between-base" data-title="Qty">
-			<div class="mdc-table--qty mdc-textfield">
+		<td class="mdc-table--body-fit" data-title="Qty">
+			<div class="mdc-table--qty mdc-textfield" data-change=".input-qty" data-auto=".oneezy">
 				<input name="quantity" type="number" value="2" class="mdc-textfield__input input-qty" min="1">
+				<a href="http://www.oneezy.com" class="oneezy">www.oneezy.com</a>
 			</div>
 		</td>
 
 		<!-- Price -->
-		<td class="mdc-table--body-price mobile-flex-horizontal between-base" data-title="Price">
+		<td class="mdc-table--body-fit" data-title="Price">
 			<div>
 				<span>$120.00</span>  	
 			</div>
 		</td>
 
 		<!-- Total Price -->
-		<td class="mdc-table--body-total mobile-flex-horizontal between-base" data-title="Total">
+		<td class="mdc-table--body-fit" data-title="Total">
 			<div>
 				<span>$240.00</span>
 			</div>
@@ -132,11 +126,10 @@
 </tbody>
 </table>
 
+</section>
 </main>
 
-    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="../data-clone/data-clone.js"></script>
-	<script src="../data-animate/data-animate.js"></script>
- 
+<script src="../mdc-js.js"></script>
+</body>
+
 </html>

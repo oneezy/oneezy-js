@@ -6,10 +6,10 @@ function dataAnimate() {
       $('[data-animate]').each(function (){
   
           var dataANIMATE    =   $(this).data("animate");
-          var dataTARGET     =   $(this).data("target");
-          var dataCLOSEST    =   $(this).data("closest");
-          var dataTHEME      =   $(this).data("theme");
-          var dataCOLOR      =   $(this).data("color");
+          var dataTARGET     =   $(this).data("animate--target");
+          var dataCLOSEST    =   $(this).data("animate--closest");
+          var dataTHEME      =   $(this).data("animate--theme");
+          var dataCOLOR      =   $(this).data("animate--color");
             
 
           $(this).on( 'click', function () {
@@ -21,12 +21,7 @@ function dataAnimate() {
                 $(dataTARGET).addClass('animate-' + dataANIMATE);
             }
 
-          }); 
-
-          // $(this).on( 'click', function () {
-          //     $(this).closest(dataTARGET).addClass('slide-' + dataANIMATE);
-          //     $(this).closest(dataTARGET).parent().css('background-color','var(--mdc-theme-bg-' +dataTHEME+ '),' + dataCOLOR);
-          // });
+          });
   
       });
   
