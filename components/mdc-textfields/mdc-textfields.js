@@ -116,8 +116,8 @@ function textInput() {
     //     mdcInput();
     // });
 
-    $(document).ready(function() {
-        textInput();
-        mdc.autoInit();
-    });
+    // $(document).ready(function() {
+    //     textInput();
+    //     mdc.autoInit();
+    // });
     
