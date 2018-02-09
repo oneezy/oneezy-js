@@ -14,7 +14,7 @@ TO DO
 function textInput() {
     
       // Update Textfield
-      $('.mdc-textfield-wrapper input, .mdc-textfield-wrapper textarea').each(function (){
+      $('.mdc-text-field-wrapper input, .mdc-text-field-wrapper textarea').each(function (){
     
           // Input
           var inputID	          = $(this).attr("id");
@@ -35,8 +35,10 @@ function textInput() {
           var requiredMESSAGE     = $(this).parent().data("message--text");
     
           this.className = '';
-          $(this).parent().addClass("mdc-textfield");
+          $(this).parent().addClass("mdc-text-field");
+          $(this).parent().attr("data-mdc-auto-init", "MDCTextField");
           $(this).addClass(inputCLASS);
+          
     
           /* Input
           ***********************************/
@@ -69,14 +71,14 @@ function textInput() {
           ***********************************/
           // Label Text
           if (typeof labelTEXT !== typeof undefined && labelTEXT !== false) {
-              $(this).parent().append('<label class="mdc-textfield__label" for="' +inputID+ '">' +labelTEXT+ '</label>');
+              $(this).parent().append('<label class="mdc-text-field__label" for="' +inputID+ '">' +labelTEXT+ '</label>');
           }
           
            // Label Icon
           if (typeof labelICON !== typeof undefined && labelICON !== false) {
-              $(this).parent().append('<i class="material-icons mdc-textfield__label">' +labelICON+ '</i>');
+              $(this).parent().append('<i class="material-icons mdc-text-field__label">' +labelICON+ '</i>');
                 
-                 $('.material-icons.mdc-textfield__label').each(function (){
+                 $('.material-icons.mdc-text-field__label').each(function (){
                     $(this).css({"left":"auto", "bottom": "6px", "right": "calc(100% + 4px)"});
                  });
           }
@@ -90,8 +92,8 @@ function textInput() {
           ***********************************/
           // Help Message
           if (typeof requiredMESSAGE !== typeof undefined && requiredMESSAGE !== false) {
-              $(this).parent().parent().append('<p class="mdc-textfield-helptext" id="' +inputID+ 'Helptext" aria-hidden="true">' +requiredMESSAGE+ '</p>');
-                 $(this).attr("aria-controls", requiredMESSAGE);
+              $(this).parent().parent().append('<p class="mdc-text-field-helper-text" id="' +inputID+ 'Helptext" aria-hidden="true">' +requiredMESSAGE+ '</p>');
+              $(this).attr("aria-controls", requiredMESSAGE);
           }
           
       });
@@ -99,17 +101,23 @@ function textInput() {
     
     /* MDC Input
     *********************************/
-    function mdcInput() {
-        var tfs = document.querySelectorAll(".mdc-textfield");
-        for (var i = 0, tf; (tf = tfs[i]); i++) {
-            mdc.textfield.MDCTextfield.attachTo(tf);
-        }
-    }
+    // function mdcInput() {
+    //     var tfs = document.querySelectorAll(".mdc-text-field");
+    //     for (var i = 0, tf; (tf = tfs[i]); i++) {
+    //         mdc.textfield.MDCTextfield.attachTo(tf);
+    //     }
+    // }
     
+
     /* Run Functions
     *********************************/
+    // $(document).ready(function() {
+    //     textInput();
+    //     mdcInput();
+    // });
+
     $(document).ready(function() {
         textInput();
-        mdcInput();
+        mdc.autoInit();
     });
     
