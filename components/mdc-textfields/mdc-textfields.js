@@ -16,6 +16,9 @@ function textInput() {
       // Update Textfield
       $('.mdc-text-field-wrapper input, .mdc-text-field-wrapper textarea').each(function (){
     
+          // Wrapper
+          var wrapperCLASS        = $(this).parent().data("wrapper--class");
+
           // Input
           var inputID	          = $(this).attr("id");
           var inputCLASS          = $(this).parent().data("input--class");
@@ -35,7 +38,7 @@ function textInput() {
           var requiredMESSAGE     = $(this).parent().data("message--text");
     
           this.className = '';
-          $(this).parent().addClass("mdc-text-field");
+          $(this).parent().addClass(wrapperCLASS);
           $(this).parent().attr("data-mdc-auto-init", "MDCTextField");
           $(this).addClass(inputCLASS);
           
