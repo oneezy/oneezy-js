@@ -1,0 +1,18 @@
+<!DOCTYPE html><html class="mdc-typography"><head><meta charset="utf-8"><title>MDC Button (Dynamic)</title><meta content="width=device-width,initial-scale=1" name="viewport"><link href="../oneezy-js.css" rel="stylesheet"></head><body class="mdc-typography"><!-- MDC: Text Field (Dynamic)
+--------------------------------------------- --><h1>MDC Form Fields (Dynamic)</h1><main class="flex-horizontal"><!-- Default 
+        ::::::::::::::::::::::::::::::::::::::::::::::::::: --><article><section class="flex-vertical" sheetsu="https://sheetsu.com/apis/v1.0su/1ea3e5b69776"><div class="oneezy-formfield-wrapper" data-wrapper--class="{{WRAPPER}}" data-input--class="{{CLASS}}" data-input--type="{{TYPE}}" data-input--min="{{MIN}}" data-input--max="{{MAX}}" data-input--autocomplete="{{AUTO}}" data-label--icon="{{ICON}}" data-label--text="{{LABEL}}" data-message--text="{{MESSAGE}}" data-required="{{REQUIRED}}"><input type="{{TYPE}}" class="{{CLASS}}" id="{{ID}}" bind="{{ID}}"><div class="mdc-line-ripple"></div></div></section></article><article><section class="flex-vertical" sheetsu="https://sheetsu.com/apis/v1.0su/1ea3e5b69776"><div class="oneezy-formfield-wrapper" data-wrapper--class="{{WRAPPER}}" data-input--class="{{CLASS}}" data-input--type="{{TYPE}}" data-input--min="{{MIN}}" data-input--max="{{MAX}}" data-input--autocomplete="{{AUTO}}" data-label--icon="{{ICON}}" data-label--text="{{LABEL}}" data-message--text="{{MESSAGE}}" data-required="{{REQUIRED}}"><input type="{{TYPE}}" class="{{CLASS}}" id="{{ID}}" bind="{{ID}}"><div class="mdc-line-ripple"></div></div></section></article></main><!-- Libraries --><script src="https://load.sheetsu.com"></script><script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script><script src="mdc-formfields.js"></script><!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/enquire.js/2.1.6/enquire.min.js"></script> --><!-- Data Functions --><!-- <script src="https://rawgit.com/oneezy/oneezy-js/master/components/data-clone/data-clone.js"></script> --><!-- <script src="https://rawgit.com/oneezy/oneezy-js/master/components/data-animate/data-animate.js"></script> --><!-- <script src="https://rawgit.com/oneezy/oneezy-js/master/components/data-bind/data-bind.js"></script> --><!-- <script src="https://rawgit.com/oneezy/oneezy-js/master/components/data-code/data-code.js"></script> --><!-- <script src="https://rawgit.com/oneezy/oneezy-js/master/components/data-event/data-event.js"></script> --><!-- MDC Components (Dynamic) --><!-- <script src="https://rawgit.com/oneezy/oneezy-js/master/components/mdc-accordion/mdc-accordion.js"></script> --><!-- <script src="https://rawgit.com/oneezy/oneezy-js/master/components/mdc-buttons/mdc-buttons.js"></script> --><!-- <script src="https://rawgit.com/oneezy/oneezy-js/master/components/mdc-textfields/mdc-textfields.js"></script> --><!-- <script src="https://rawgit.com/oneezy/oneezy-js/master/components/mdc-image/mdc-image.js"></script> --><!-- <script src="https://rawgit.com/oneezy/oneezy-js/master/components/mdc-radio/mdc-radio.js"></script> --><script>function formFIELDS() {
+        return $.ajax({
+            url: "https://sheetsu.com/apis/v1.0su/1ea3e5b69776"
+        });
+    }
+
+    $(document).ready(function() {
+        $.when(formFIELDS()).done(function(){
+
+            setTimeout(function(){
+                oneezyFORMFIELDS();
+                mdc.autoInit();
+            }, 2000);
+
+        });
+    });</script></body></html>

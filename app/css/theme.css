@@ -1,0 +1,89 @@
+/*
+  _______ _    _ ______ __  __ ______
+ |__   __| |  | |  ____|  \/  |  ____|
+    | |  | |__| | |__  | \  / | |__
+    | |  |  __  |  __| | |\/| |  __|
+    | |  | |  | | |____| |  | | |____
+    |_|  |_|  |_|______|_|  |_|______|
+
+*/
+
+/* Material Design Components */
+@import "https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css";
+
+/* Fonts + Icons */
+@import "https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400,500,700,900";
+@import "https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900";
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+/* Oneezy CSS */
+@import "https://rawgit.com/oneezy/oneezy-css/master/oneezy-css.css";
+
+/* Oneezy JS */
+@import "https://rawgit.com/oneezy/oneezy-js/master/components/data-animate/data-animate.css";
+@import "https://rawgit.com/oneezy/oneezy-js/master/components/mdc-accordion/mdc-accordion.css";
+@import "https://rawgit.com/oneezy/oneezy-js/master/components/mdc-table/mdc-table.css";
+
+
+:root { 
+    /* My Theme 
+    ******************************************/
+
+    /* Theme (Lite) */
+    --theme-primary:    #0E0E0F;
+    --theme-secondary:  #3dafd9;
+    --theme-tertiary:   #494D54;
+    --theme-accent:     #ff9900;
+    
+    /* Theme (Dark) */
+    --bg-lite-primary:       #fff;
+    --bg-lite-secondary:     #F5F4F4;
+    --bg-dark-primary:       #323031;
+
+    /* Theme */
+    --text-lite-primary:       #0E0E0F;
+    --text-lite-secondary:     #222222;
+    --text-dark-primary:       #323031;
+
+    /* Typography */
+    --display-1:      14px;
+    --display-2:      14px;
+    --display-3:      14px;
+    --display-4:      14px;
+    --title:          14px;
+    --heading:        14px;
+    --subheading:     14px;
+    --body-1:         14px;
+    --body-2:         14px;
+    --button:         14px;
+    --caption:        14px;
+    
+    /* Transparency */
+    --scrim:  rgba(0,0,0,.64);
+
+
+    /* MDC Theme (overwrite) 
+    ******************************************/
+    --mdc-theme-primary: #03a9f4;
+    --mdc-theme-primary-light: #67daff;
+    --mdc-theme-primary-dark: #007ac1;
+    --mdc-theme-secondary: #ffb300;
+    --mdc-theme-secondary-light: #ffe54c;
+    --mdc-theme-secondary-dark: #c68400;
+    --mdc-theme-background: #fff;
+}
+
+
+/* Global Styles */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { background: #f2f2f2; font-family: Roboto, Arial, sans-serif; height: 100vh; overflow: hidden; }
+/* header { position: fixed; top: 0; left: 0; right: 0; background: black; color: white; padding: 1rem; z-index: 1; } */
+/* main { height: calc(100% - 70px); margin: 70px 0 0; overflow: hidden; } */
+main { height: 100%; overflow: hidden; }
+article {  }
+h1 { font-weight: 300; }
+h2 { font-weight: 400; color: var(--theme-primary); font-size: 20px; }
+h3 { margin: 1rem 0; }
+img { max-width: 100%; display: block; position: relative; }
+a { text-decoration: none; color: var(--mdc-theme-primary); }

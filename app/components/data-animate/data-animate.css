@@ -1,0 +1,61 @@
+/* Animatable Classes
+*******************************/
+.animate-left 		    { animation: animateLEFT .22s ease-in-out forwards; }
+.animate-left:hover 	{ animation: animateLEFT .22s ease-in-out forwards; }
+
+.animate-right 		    { animation: animateRIGHT .22s ease-in-out forwards; }
+.animate-right:hover 	{ animation: animateRIGHT .22s ease-in-out forwards; }
+
+.animate-up 		    { animation: animateUP .22s ease-in-out forwards; }
+.animate-up:hover 	    { animation: animateUP .22s ease-in-out forwards; }
+
+.animate-down 		    { animation: animateDOWN .22s ease-in-out forwards; }
+.animate-down:hover 	{ animation: animateDOWN .22s ease-in-out forwards; }
+
+.animate-shrink 		{ animation: animateSHRINK .22s ease-in-out forwards; }
+.animate-shrink:hover 	{ animation: animateSHRINK .22s ease-in-out forwards; }
+
+.animate-grow 		    { animation: animateGROW .22s ease-in-out forwards; }
+.animate-grow:hover 	{ animation: animateGROW .22s ease-in-out forwards; }
+
+.animate-leftup         { animation: animateLEFT .22s ease-in-out forwards, tableUP .22s .22s ease-in-out forwards; }
+.animate-leftup:hover 	{ animation: animateLEFT .22s ease-in-out forwards, tableUP .22s .22s ease-in-out forwards; }
+
+.animate-rightup        { animation: animateRIGHT .22s ease-in-out forwards, tableUP .22s .22s ease-in-out forwards; }
+.animate-rightup:hover 	{ animation: animateRIGHT .22s ease-in-out forwards, tableUP .22s .22s ease-in-out forwards; }
+
+
+@keyframes animateLEFT {
+	0% 	  { transform: translate(0, 0); opacity: 1; }
+	100%  { transform: translate(-50vw, 0); opacity: 0; }
+ }
+
+@keyframes animateRIGHT {
+	0% 	  { transform: translate(0, 0); opacity: 1; }
+	100%  { transform: translate(50vw, 0); opacity: 0; }
+}
+
+@keyframes animateUP {
+	0% 	  { transform: translate(0, 0); opacity: 1; }
+	100%  { transform: translate(0, -50vh); opacity: 0; }
+}
+
+@keyframes animateDOWN {
+	0% 	  { transform: translate(0, 0); opacity: 1; }
+	100%  { transform: translate(0, 50vh); opacity: 0; }
+}
+
+@keyframes animateSHRINK {
+	0% 	  { transform: scale(1, 1); opacity: 1; }
+	100%  { transform: scale(0, 0); opacity: 0; }
+}
+
+@keyframes animateGROW {
+	0% 	  { transform: scale(0, 0); opacity: 0; }
+	100%  { transform: scale(1, 1); opacity: 1; }
+}
+
+@keyframes tableUP {
+	0% 	  { transform: scale(1, 1); }
+	100%  { transform: scale(0, 1); height: 0; line-height: 0; padding: 0; margin: 0; border: none; }
+}

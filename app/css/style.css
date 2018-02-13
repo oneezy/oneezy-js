@@ -1,0 +1,99 @@
+/*
+   _____ _________     ___      ______  _____
+  / ____|__   __\ \   / / |    |  ____|/ ____|
+ | (___    | |   \ \_/ /| |    | |__  | (___
+  \___ \   | |    \   / | |    |  __|  \___ \
+  ____) |  | |     | |  | |____| |____ ____) |
+ |_____/   |_|     |_|  |______|______|_____/
+
+*/
+
+/* Highlighting & Selection 
+*********************************************/
+*::-moz-selection { background: rgba(0,0,0,.2); }
+*::selection { background: rgba(0,0,0,.2); }
+
+
+/* Hidden (for SEO)
+*********************************************/
+.visually-hidden {
+    border: 0 none;
+    clip: rect(0px, 0px, 0px, 0px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px; 
+}
+
+/* Material Design: Z-depth (Box Shadow) 
+*********************************************/
+.boxshadow-1 { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+.boxshadow-2 { box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); }
+.boxshadow-3 { box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); }
+.boxshadow-4 { box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); }
+.boxshadow-5 { box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); }
+
+
+/* Material Design: Z-depth (Drop Shadow) 
+*********************************************/
+.dropshadow-1 { filter: drop-shadow(0 1px 3px rgba(0,0,0,0.12)) drop-shadow(0 1px 2px rgba(0,0,0,0.24)); }
+.dropshadow-2 { filter: drop-shadow(0 3px 6px rgba(0,0,0,0.16)) drop-shadow(0 3px 6px rgba(0,0,0,0.23)); }
+.dropshadow-3 { filter: drop-shadow(0 10px 20px rgba(0,0,0,0.19)) drop-shadow(0 6px 6px rgba(0,0,0,0.23)); }
+.dropshadow-4 { filter: drop-shadow(0 14px 28px rgba(0,0,0,0.25)) drop-shadow(0 10px 10px rgba(0,0,0,0.22)); }
+.dropshadow-5 { filter: drop-shadow(0 19px 38px rgba(0,0,0,0.30)) drop-shadow(0 15px 12px rgba(0,0,0,0.22)); }
+
+
+/* Scroll Bar 
+*********************************************/
+.scrollbar::-webkit-scrollbar-track 	{ background-color: #f2f2f2 }
+.scrollbar::-webkit-scrollbar 			{ width: 5px; }
+.scrollbar::-webkit-scrollbar-thumb 	{ background-color: rgba(0,0,0,.07); }
+
+
+
+/*==============================================                                           
+  ####    #####  ##   ##  ##   ####  #####  
+  ##  ##  ##     ##   ##  ##  ##     ##     
+  ##  ##  #####  ##   ##  ##  ##     #####  
+  ##  ##  ##      ## ##   ##  ##     ##     
+  ####    #####    ###    ##   ####  #####  
+                                              
+==============================================*/
+
+/* Universal */
+header a { color: white; }
+main section { background: #fff; margin: 2rem 0; padding: 1rem; }
+main code { padding: 1rem;  }
+
+header .logo-icon { width: 60px; margin: 0 0 0 2rem; transform: translateX(16px); }
+main .logo-icon { width: 100%; padding: 0 10%; }
+
+.wrapper { position: relative; z-index: 1; margin: 0 auto; }
+
+
+/* Mobile */
+@media (min-width: 0) and (max-width: 768px) {
+
+    .wrapper { width: 90%; }
+    .controls { overflow-y: scroll; }
+    .code { overflow-y: scroll; }
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) { 
+
+    .wrapper { width: 95%; }
+    .controls { max-width: 300px; }
+    .code { overflow-y: scroll; }
+    
+}
+
+/* Desktop */
+@media (min-width: 1025px) { 
+
+    .wrapper { width: 95%; max-width: 1300px; }
+    .controls { max-width: 300px; }
+    .code { overflow-y: scroll; }
+}

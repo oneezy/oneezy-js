@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" class="oneezy">
+
+<!-- HEAD: START -->
+  <head>
+    <title>Oneezy JS</title>
+    <meta name="description" content="Oneezy JS">
+    <meta name="keywords" content="oneezy js, oneezy-js, oneezy">
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="images/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="images/icons/mstile-144x144.png">
+    <meta name="theme-color" content="#ff9900">
+
+
+    <!-- build:css css/styles.min.css -->
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- endbuild -->
+  </head>
+<!-- HEAD: END -->
+
+  <body class="flex-vertical mdc-typography">
+
+<!-- HEADER: START -->
+    <header class="mdc-toolbar mdc-toolbar--fixed">
+        <div class="mdc-toolbar__row">
+    
+            <!-- Left -->
+            <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+                <a href="javascript:void(0)" class="demo-menu material-icons mdc-toolbar__menu-icon">menu</a>
+                <a href="/"><img class="logo-icon" src="images/icon-white.svg" alt="Oneezy JS"></a>
+                <a href="/" class="mdc-toolbar__title"><h1>Oneezy JS</h1></a>
+            </section>
+            
+            <!-- Right -->
+            <section class="mdc-toolbar__section mdc-toolbar__section--align-end" role="toolbar">
+                <a href="#" class="material-icons mdc-toolbar__icon" aria-label="Download" alt="Download">file_download</a>
+                <a href="#" class="material-icons mdc-toolbar__icon" aria-label="Print this page" alt="Print this page">print</a>
+                <a href="#" class="material-icons mdc-toolbar__icon toggle" aria-label="More" alt="More">more_vert</a>
+            </section>
+            
+        </div>
+    </header>
+<!-- HEADER: END -->
+
+<!-- NAVIGATION: START -->
+    <aside class="mdc-drawer mdc-drawer--temporary mdc-typography">
+        <nav class="mdc-drawer__drawer">
+            <nav id="icon-with-text-demo" class="mdc-drawer__content mdc-list">
+                                
+                <div class="mdc-list-group" sheetsu="https://sheetsu.com/apis/v1.0su/b1990aff7e3e">
+
+                    {{HTML}}
+                    
+                    <ul class="mdc-list mdc-list--one-line mdc-list--avatar-list">
+                        <li class="mdc-list-item" data-mdc-auto-init="MDCRipple">
+                            <span class="mdc-list-item__graphic" role="presentation">
+                                <i class="material-icons" aria-hidden="true">{{ICON}}</i>
+                            </span>
+                            <a href="{{LINK}}" class="mdc-list-item__text">{{LABEL}}</a>
+                        </li>
+                    </ul>
+
+                </div> 
+                
+            </nav>
+        </nav>
+    </aside>
+<!-- NAVIGATION: END -->
+
+<!-- MAIN: START -->
+    <main class="flex-vertical tablet-flex-horizontal desktop-flex-horizontal container mdc-toolbar-fixed-adjust">
+        <article id="main" class="flex-vertical wrapper">
+          
+          <!-- Demo Markup -->
+          <section class="mdc-card flex-vertical center-center">
+              <img class="logo-icon" src="images/icon-black.svg" alt="Oneezy JS">
+          </section>
+
+        </article>
+    </main>
+<!-- MAIN: END -->
+
+
+
+    <script src="https://load.sheetsu.com"></script>
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    
+    <!-- FOR DEVELOPMENT
+    ********************************************************* -->
+    <script src="js/oneezy-js.js"></script>
+
+    <!-- FOR PRODUCTION
+    ********************************************************* -->
+    <!-- build:js js/scripts.min.js -->
+    <script src="components/mdc-toolbar/mdc-toolbar.js"></script>
+    <script src="components/data-ajax/data-ajax.js"></script>
+    <script src="js/script.js"></script>
+    <!-- endbuild  -->
+
+
+  </body>
+</html>
