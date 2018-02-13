@@ -5,7 +5,6 @@ html,
 body { min-height: 100%; overflow-x: hidden; }
 body { background: #eee; }
 main { margin-top: 5rem !important; padding: 2rem 1rem; background: #fff; border-radius: 10px; }
-section {  }
 article { margin: 2rem 0; padding: 1rem 3rem 3rem; background: #fff; }
 h1 { font-family: "Roboto Mono"; background: black; color: white; padding: .25rem 1rem; position: fixed; top: 0; width: 100%; z-index: 1; }
 h1 span { font-weight: normal; font-size: 16px; position: absolute; right: 24px; top: 14px; display: inline-block; text-transform: uppercase; }

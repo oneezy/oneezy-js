@@ -33,7 +33,10 @@ Oneezy JS (JS)
     "https://rawgit.com/oneezy/oneezy-js/master/components/mdc-image/mdc-image.js",
     // "https://rawgit.com/oneezy/oneezy-js/master/components/mdc-radio/mdc-radio.js",
     "https://rawgit.com/oneezy/oneezy-js/master/components/mdc-table/mdc-table.js",
-    "https://rawgit.com/oneezy/oneezy-js/master/components/mdc-textfields/mdc-textfields.js" 
+    "https://rawgit.com/oneezy/oneezy-js/master/components/mdc-textfields/mdc-textfields.js",
+    "data-count.js" 
+
+    
 
 ].forEach(function(src) {
     var script = document.createElement('script');
