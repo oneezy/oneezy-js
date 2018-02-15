@@ -30,7 +30,7 @@ function dataCOUNT() {
         // Data Attributes
         var dataCOUNT             =   $(this).data("count");
         var dataTOTAL             =   $(this).data("count--total");
-        var dataFILLED            =   $(this).data("count--filled");
+        var dataCHECKED           =   $(this).data("count--checked");
         var dataPERCENT           =   $(this).data("count--percent");
 
         // Input Types
@@ -47,22 +47,22 @@ function dataCOUNT() {
         var radiosTOTAL  		  =   $(this).find(radios).not(":disabled").length;
         var checkboxesTOTAL       =   $(this).find(checkboxes).not(":disabled").length;
         		
-        // Count Inputs Filled
-        var textfieldsFILLED	  =   $(this).find(textfields).filter(function() {return !!this.value;}).length;
-        var numberfieldsFILLED    =   $(this).find(numberfields).filter(function() {return !!this.value;}).length;
-        var textareasFILLED	      =   $(this).find(textareas).filter(function() {return !!this.value;}).length;
-        var radiosFILLED		  =   $(this).find("input:radio:checked").length;
-        var checkboxesFILLED	  =   $(this).find("input:checkbox:checked").length;
+        // Count Inputs CHECKED
+        var textfieldsCHECKED	  =   $(this).find(textfields).filter(function() {return !!this.value;}).length;
+        var numberfieldsCHECKED   =   $(this).find(numberfields).filter(function() {return !!this.value;}).length;
+        var textareasCHECKED	  =   $(this).find(textareas).filter(function() {return !!this.value;}).length;
+        var radiosCHECKED		  =   $(this).find("input:radio:checked").length;
+        var checkboxesCHECKED	  =   $(this).find("input:checkbox:checked").length;
 
         // Total Inputs
-        var total   = textfieldsTOTAL + numberfieldsTOTAL + textareasTOTAL + radiosTOTAL + checkboxesTOTAL;
-        var filled  = textfieldsFILLED + numberfieldsFILLED + textareasFILLED + radiosFILLED + checkboxesFILLED;
-        var percent = ((filled/total) * 100).toFixed(0);
+        var total    = textfieldsTOTAL + numberfieldsTOTAL + textareasTOTAL + radiosTOTAL + checkboxesTOTAL;
+        var checked  = textfieldsCHECKED + numberfieldsCHECKED + textareasCHECKED + radiosCHECKED + checkboxesCHECKED;
+        var percent  = ((checked/total) * 100).toFixed(0);
 
 
         // Target Element
         $(this).find(dataTOTAL).text(total);
-        $(this).find(dataFILLED).text(filled);
+        $(this).find(dataCHECKED).text(checked);
         $(this).find(dataPERCENT).text(percent);
 
         $(this).find('.meter').css({

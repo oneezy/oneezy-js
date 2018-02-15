@@ -67,8 +67,9 @@ header a { color: white; }
 main section { background: #fff; margin: 2rem 0; padding: 1rem; }
 main code { padding: 1rem;  }
 
-header .logo-icon { width: 60px; margin: 0 0 0 2rem; transform: translateX(16px); }
+header .logo-icon { width: 60px; margin: 0 0 0 1rem; transform: translateX(16px); }
 main .logo-icon { width: 100%; padding: 0 10%; }
+main h2 { font-size: 48px; margin: 3rem 0; }
 
 .wrapper { position: relative; z-index: 1; margin: 0 auto; }
 

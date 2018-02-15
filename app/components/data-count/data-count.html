@@ -1,37 +1,39 @@
 <!DOCTYPE html>
-<html class="mdc-typography">
+<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" class="oneezy">
+
+<!-- HEAD: START -->
   <head>
-    <meta charset="utf-8">
-    <title>DATA Count</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../oneezy-js.css">
+    <title>Oneezy JS</title>
+    <meta name="description" content="Oneezy JS">
+    <meta name="keywords" content="oneezy js, oneezy-js, oneezy">
 
+    <div data-ajax="../../partials/head-meta.html"></div>
+
+<!-- DEMO STYLES: START -->
     <style>
-            
-        main        { background: transparent; margin: 0 2rem 2rem !important; }
-        article     { background: transparent; }
-        section     { display: flex; flex-direction: column; flex-wrap: wrap; flex: 1; min-width: 220px; background: white; margin: 1rem; padding: 1rem; }
-        strong      { display: inline-block; min-width: 80px; }
-        button      { margin: 1rem 0; }
-        h2          { margin: 1rem 0; }
-        p           { font-size: 14px; }
-
-        section > *:not(h2) { margin: 0 0 10px; }
         
-        .filled     { color: gray; position: relative; }
+        /* Demo Header */
+        .header .checked     { color: rgba(255,255,255,.5); }
+        .header .total      { color: white; }
+        .header .percent    { color: skyblue; }
+        .header .percent:after    { content: "%"; font-size: 1.5rem; font-weight: 300; display: inline-block; position: absolute; top: 10px; left: 100%; }
+
+        .header section { border-radius: 100%; background: black; width: 200px; height: 200px; color: white; }
+        .header .checked { display: inline-block; color: rgba(255,255,255,.5); font-size: 1.5rem; }
+        .header .checked:after { content: " out of "; font-size: 12px; }
+        .header .total { font-size: 1.5rem; font-weight: 300; }
+        .header .percent { font-size: 4rem; font-weight: 700; }
+
+        /* Demo Main */
+        .main section     { display: flex; flex-direction: column; flex-wrap: wrap; flex: 1; min-width: 220px; background: white; margin: 1rem; padding: 1rem; }
+        .main section > *:not(h3) { margin: 0 0 10px; }
+        
+
+        /* Demo Styles */
+        .checked     { color: gray; position: relative; }
         .total      { color: blue; position: relative; }
         .percent    { color: black; position: relative; }
-
-        header .filled     { color: rgba(255,255,255,.5); }
-        header .total      { color: white; }
-        header .percent    { color: skyblue; }
-        header .percent:after    { content: "%"; font-size: 1.5rem; font-weight: 300; display: inline-block; position: absolute; top: 10px; left: 100%; }
-
-        header section { border-radius: 100%; background: black; width: 200px; height: 200px; color: white; }
-        header .filled { display: inline-block; color: rgba(255,255,255,.5); font-size: 1.5rem; }
-        header .filled:after { content: " out of "; font-size: 12px; }
-        header .total { font-size: 1.5rem; font-weight: 300; }
-        header .percent { font-size: 4rem; font-weight: 700; }
+        .percent:after    { content: "%"; }
 
         .bar-chart { 
             background: rgba(0,0,0,.12); position: relative; z-index: 0; overflow: hidden; width: 100%; display: block; font-size: 12px; padding: 2px 0 2px 4px; 
@@ -44,161 +46,217 @@
 
         [disabled] { opacity: .34; }
 
+        .mdc-card { position: relative; }
+        .mdc-card p { position: absolute; bottom: calc(100% + 10px); right: 1rem; }
+
     </style>
+<!-- DEMO STYLES: END -->
+
+    <!-- build:css css/styles.min.css -->
+    <link rel="stylesheet" href="../../css/theme.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- endbuild -->
   </head>
-  
-<body class="mdc-typography">
+<!-- HEAD: END -->
 
-    <h1>DATA Count</h1>
-    
+  <body class="flex-vertical mdc-typography">
 
+<!-- HEADER: START -->
+    <header class="mdc-toolbar mdc-toolbar--fixed" data-ajax="../../partials/header.html"></header>
+<!-- HEADER: END -->
 
-    <!-- DATA Count
-    =============================== -->
-    <main class="flex-vertical" data-count 
-            data-count--filled=".filled" 
-            data-count--total=".total" 
-            data-count--percent=".percent" data-count--chart="bar">
+<!-- NAVIGATION: START -->
+    <aside class="mdc-drawer mdc-drawer--temporary mdc-typography">
+        <nav class="mdc-drawer__drawer">
+            <nav id="icon-with-text-demo" class="mdc-drawer__content mdc-list">
+                                
+                <div class="mdc-list-group" sheetsu="https://sheetsu.com/apis/v1.0su/b1990aff7e3e">
 
-        <header class="flex-vertical center-center margin-t-3">
-            <section class="flex-vertical center-center">
-                <div class="flex-horizontal center-start">
-                    <div id="filled" class="filled"></div>
-                    <div id="total" class="total"></div>
-                </div>
+                    {{HTML}}
+                    
+                    <ul class="mdc-list mdc-list--one-line mdc-list--avatar-list">
+                        <li class="mdc-list-item" data-mdc-auto-init="MDCRipple">
+                            <span class="mdc-list-item__graphic" role="presentation">
+                                <i class="material-icons" aria-hidden="true">{{ICON}}</i>
+                            </span>
+                            <a href="{{LINK}}" class="mdc-list-item__text">{{LABEL}}</a>
+                        </li>
+                    </ul>
 
-                <div id="percent" class="percent"></div>
-            </section>
-        </header>
-
-        <article class="flex-horizontal center-start wrap">
-
-        <!-- Text Fields -->
-            <section data-count data-count--filled=".filled" data-count--total=".total" data-count--percent=".percent" data-count--chart="bar">
-                <h2 class="flex-horizontal between-base">
-                    <span>Text Fields</span>
-                    <p>(<span class="filled"></span> of <span class="total"></span>)</p>
-                </h2>
-
-                <input placeholder="text" type="text" class="mdc-text-field__input" value="Username" required>
-                <input placeholder="password" type="password" class="mdc-text-field__input" value="Password" required>
-                <input placeholder="email" type="email" class="mdc-text-field__input" value="" disabled>
-                <input placeholder="telephone" type="tel" class="mdc-text-field__input" value="" disabled>
-                <input placeholder="search" type="search" class="mdc-text-field__input" value="" disabled>
-                <input placeholder="url" type="url" class="mdc-text-field__input" value="" disabled>
-            </section>
-        <!-- Text Fields -->
-
-        <!-- Number Inputs -->
-            <section data-count data-count--filled=".filled" data-count--total=".total" data-count--percent=".percent" data-count--chart="bar">
-                <h2 class="flex-horizontal between-base">
-                    <span>Number Inputs</span>
-                    <p>(<span class="filled"></span> of <span class="total"></span>)</p>
-                </h2>
-
-                <input placeholder="number" type="number" class="mdc-text-field__input">
-                <input placeholder="date" type="date" class="mdc-text-field__input">
-                <!-- <input placeholder="range" type="range" class="mdc-text-field__input" disabled> -->
-                <input placeholder="time" type="time" class="mdc-text-field__input" disabled>
-                <input placeholder="datetime-local" type="datetime-local" class="mdc-text-field__input" disabled>
-                <input placeholder="week" type="week" class="mdc-text-field__input" disabled>
-                <input placeholder="month" type="month" class="mdc-text-field__input" disabled>
-                <!-- <input placeholder="color" type="color" class="mdc-text-field__input" disabled> -->
-            </section>
-        <!-- Number Inputs -->
-
-        <!-- Textareas -->
-            <section data-count data-count--filled=".filled" data-count--total=".total" data-count--percent=".percent" data-count--chart="bar">
-                <h2 class="flex-horizontal between-base">
-                    <span>Textareas</span>
-                    <p>(<span class="filled"></span> of <span class="total"></span>)</p>
-                </h2>
+                </div> 
                 
-                <textarea cols="30" rows="5"></textarea>
-                <textarea cols="30" rows="5" disabled></textarea>
-            </section>
-        <!-- Textareas -->
+            </nav>
+        </nav>
+    </aside>
+<!-- NAVIGATION: END -->
 
-        <!-- Radios -->
-            <section data-count data-count--filled=".filled" data-count--total=".total" data-count--percent=".percent" data-count--chart="bar">
-                <h2 class="flex-horizontal between-base">
-                    <span>Radios</span>
-                    <p>(<span class="filled"></span> of <span class="total"></span>)</p>
-                </h2>
-                
-                <h5>Radio Group 1</h5>
-                <div>
-                    <input type="radio" id="marketChoice1" name="market" value="BTC">
-                    <label for="marketChoice1">BTC</label>
-                </div>
-                <div>
-                    <input type="radio" id="marketChoice2" name="market" value="ETH">
-                    <label for="marketChoice2">ETH</label>
-                </div>
-                <div>
-                    <input type="radio" id="marketChoice3" name="market" value="USDT" disabled>
-                    <label for="marketChoice3">USDT</label>
-                </div>
+<!-- MAIN: START -->
 
-                <hr>
 
-                <h5>Radio Group 2</h5>
-                <div>
-                    <input type="radio" id="strategyChoice1" name="strategy" value="BUY">
-                    <label for="strategyChoice1">BUY</label>
-                </div>
-                <div>
-                    <input type="radio" id="strategyChoice2" name="strategy" value="SELL">
-                    <label for="strategyChoice2">SELL</label>
-                </div>
-                <div>
-                    <input type="radio" id="strategyChoice3" name="strategy" value="HODL" disabled>
-                    <label for="strategyChoice3">HODL</label>
-                </div>
-            </section>
-        <!-- Radios -->
+    <main class="flex-vertical tablet-flex-horizontal desktop-flex-horizontal container mdc-toolbar-fixed-adjust">
+        <article id="main" class="flex-vertical wrapper">
+          
+            <h2 class="margin-y-3">DATA Count</h2>
 
-        <!-- Checkboxes -->
-            <section data-count data-count--filled=".filled" data-count--total=".total" data-count--percent=".percent" data-count--chart="bar">
-                <h2 class="flex-horizontal between-base">
-                    <span>Checkboxes</span>
-                    <p>(<span class="filled"></span> of <span class="total"></span>)</p>
-                </h2>
+            <!-- DATA Count
+            =============================== -->
+            <div class="flex-vertical" 
+                    data-count 
+                    data-count--checked=".checked" 
+                    data-count--total=".total" 
+                    data-count--percent=".percent" data-count--chart="bar">
 
-                <h5>Checkbox Group 1</h5>
-                <div>
-                    <input type="checkbox" id="coinCheck1" name="coin" value="BTC">
-                    <label for="coinCheck1">BTC</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="coinCheck2" name="coin" value="ETH" disabled>
-                    <label for="coinCheck2">ETH</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="coinCheck3" name="coin" value="LTC" checked>
-                    <label for="coinCheck3">LTC</label>
+                <div class="flex-vertical start-center margin-t-3 header">
+                    <section class="flex-vertical start-center">
+                        <div class="flex-horizontal center-start">
+                            <div id="checked" class="checked"></div>
+                            <div id="total" class="total"></div>
+                        </div>
+
+                        <div id="percent" class="percent"></div>
+                    </section>
                 </div>
 
-                <h5>Checkbox Group 2</h5>
-                <div>
-                    <input type="checkbox" id="altcoinCheck1" name="altcoin" value="Ripple">
-                    <label for="altcoinCheck1">Ripple</label>
+                <div class="flex-horizontal center-start wrap main">
+
+                <!-- Text Fields -->
+                    <section class="mdc-card" data-count data-count--checked=".checked" data-count--total=".total" data-count--percent=".percent" data-count--chart="bar">
+                        <h3 class="flex-horizontal between-base">
+                            <span>Text Fields</span>
+                            <p>(<span class="checked"></span> of <span class="total"></span>)</p>
+                        </h3>
+
+                        <input placeholder="text" type="text" class="mdc-text-field__input" value="Username" required>
+                        <input placeholder="password" type="password" class="mdc-text-field__input" value="Password" required>
+                        <input placeholder="email" type="email" class="mdc-text-field__input" value="" disabled>
+                        <input placeholder="telephone" type="tel" class="mdc-text-field__input" value="" disabled>
+                        <input placeholder="search" type="search" class="mdc-text-field__input" value="" disabled>
+                        <input placeholder="url" type="url" class="mdc-text-field__input" value="" disabled>
+                    </section>
+                <!-- Text Fields -->
+
+                <!-- Number Inputs -->
+                    <section class="mdc-card" data-count data-count--checked=".checked" data-count--total=".total" data-count--percent=".percent" data-count--chart="bar">
+                        <h3 class="flex-horizontal between-base">
+                            <span>Number Inputs</span>
+                            <p>(<span class="checked"></span> of <span class="total"></span>)</p>
+                        </h3>
+
+                        <input placeholder="number" type="number" class="mdc-text-field__input">
+                        <input placeholder="date" type="date" class="mdc-text-field__input">
+                        <!-- <input placeholder="range" type="range" class="mdc-text-field__input" disabled> -->
+                        <input placeholder="time" type="time" class="mdc-text-field__input" disabled>
+                        <input placeholder="datetime-local" type="datetime-local" class="mdc-text-field__input" disabled>
+                        <input placeholder="week" type="week" class="mdc-text-field__input" disabled>
+                        <input placeholder="month" type="month" class="mdc-text-field__input" disabled>
+                        <!-- <input placeholder="color" type="color" class="mdc-text-field__input" disabled> -->
+                    </section>
+                <!-- Number Inputs -->
+
+                <!-- Textarea -->
+                    <section class="mdc-card" data-count data-count--checked=".checked" data-count--total=".total" data-count--percent=".percent" data-count--chart="bar">
+                        <h3 class="flex-horizontal between-base">
+                            <span>Textareas</span>
+                            <p>(<span class="checked"></span> of <span class="total"></span>)</p>
+                        </h3>
+                        
+                        <textarea cols="30" rows="5"></textarea>
+                        <textarea cols="30" rows="5"></textarea>
+                    </section>
+                <!-- Textareas -->
+
+                <!-- Radios -->
+                    <section class="mdc-card" data-count data-count--checked=".checked" data-count--total=".total" data-count--percent=".percent" data-count--chart="bar">
+                        <h3 class="flex-horizontal between-base">
+                            <span>Radios</span>
+                            <p>(<span class="checked"></span> of <span class="total"></span>)</p>
+                        </h3>
+                        
+                        <h5>Radio Group 1</h5>
+                        <div>
+                            <input type="radio" id="marketChoice1" name="market" data-group="market" value="BTC">
+                            <label for="marketChoice1">BTC</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="marketChoice2" name="market" data-group="market" value="ETH">
+                            <label for="marketChoice2">ETH</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="marketChoice3" name="market" data-group="market" value="USDT" disabled>
+                            <label for="marketChoice3">USDT</label>
+                        </div>
+
+                        <hr>
+
+                        <h5>Radio Group 2</h5>
+                        <div>
+                            <input type="radio" id="strategyChoice1" name="strategy" data-group="strategy" value="BUY">
+                            <label for="strategyChoice1">BUY</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="strategyChoice2" name="strategy" data-group="strategy" value="SELL">
+                            <label for="strategyChoice2">SELL</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="strategyChoice3" name="strategy" data-group="strategy" value="HODL" disabled>
+                            <label for="strategyChoice3">HODL</label>
+                        </div>
+                    </section>
+                <!-- Radios -->
+
+                <!-- Checkboxes -->
+                    <section class="mdc-card" data-count data-count--checked=".checked" data-count--total=".total" data-count--percent=".percent" data-count--chart="bar">
+                        <h3 class="flex-horizontal between-base">
+                            <span>Checkboxes</span>
+                            <p>(<span class="checked"></span> of <span class="total"></span>)</p>
+                        </h3>
+
+                        <h5>Checkbox Group 1</h5>
+                        <div>
+                            <input type="checkbox" id="coinCheck1" name="coin" value="BTC">
+                            <label for="coinCheck1">BTC</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="coinCheck2" name="coin" value="ETH" disabled>
+                            <label for="coinCheck2">ETH</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="coinCheck3" name="coin" value="LTC" checked>
+                            <label for="coinCheck3">LTC</label>
+                        </div>
+
+                        <h5>Checkbox Group 2</h5>
+                        <div>
+                            <input type="checkbox" id="altcoinCheck1" name="altcoin" value="Ripple">
+                            <label for="altcoinCheck1">Ripple</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="altcoinCheck2" name="altcoin" value="Cardano" disabled>
+                            <label for="altcoinCheck2">Cardano</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="altcoinCheck3" name="altcoin" value="Tron" checked>
+                            <label for="altcoinCheck3">Tron</label>
+                        </div>
+                    </section>
+                <!-- Checkboxes -->
                 </div>
-                <div>
-                    <input type="checkbox" id="altcoinCheck2" name="altcoin" value="Cardano" disabled>
-                    <label for="altcoinCheck2">Cardano</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="altcoinCheck3" name="altcoin" value="Tron" checked>
-                    <label for="altcoinCheck3">Tron</label>
-                </div>
-            </section>
-        <!-- Checkboxes -->
+            </div>
+
         </article>
-        
-    
     </main>
+<!-- MAIN: END -->
 
-    <script src="../oneezy-js.js"></script>
-    </body>
+<!-- DEV SCRIPTS: START -->
+    <script src="https://load.sheetsu.com"></script>
+    <script src="../../js/oneezy-js.js"></script>
+<!-- DEV SCRIPTS: END -->
+
+
+<!-- PRODUCTION SCRIPTS: START -->
+    <!-- build:js js/scripts.min.js -->
+    <!-- endbuild  -->
+<!-- PRODUCTION SCRIPTS: END -->
+
+  </body>
 </html>

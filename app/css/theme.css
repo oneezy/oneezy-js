@@ -80,7 +80,7 @@
 body { background: #f2f2f2; font-family: Roboto, Arial, sans-serif; height: 100vh; overflow: hidden; }
 /* header { position: fixed; top: 0; left: 0; right: 0; background: black; color: white; padding: 1rem; z-index: 1; } */
 /* main { height: calc(100% - 70px); margin: 70px 0 0; overflow: hidden; } */
-main { height: 100%; overflow: hidden; }
+main { min-height: 100%; overflow: auto; }
 article {  }
 h1 { font-weight: 300; }
 h2 { font-weight: 400; color: var(--theme-primary); font-size: 20px; }
