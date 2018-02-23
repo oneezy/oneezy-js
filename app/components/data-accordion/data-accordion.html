@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" class="oneezy">
+
+<!-- HEAD: START -->
+  <head>
+    <title>Oneezy JS</title>
+    <meta name="description" content="Oneezy JS">
+    <meta name="keywords" content="oneezy js, oneezy-js, oneezy">
+
+    <div data-ajax="../../partials/head-meta.html"></div>
+
+    <!-- DEMO STYLES: START -->
+        <style>
+            * { margin: 0; padding: 0; box-sizing: border-box; }
+            body { background: #f2f2f2; }
+            textarea { max-width: 100%; padding: .5rem; border: 1px solid black; border-radius: 4px; overflow: hidden; }
+            [disabled] { opacity: .34; }
+
+            /* Main 
+            **********************************/
+            .main { background: #f2f2f2; border-top: 1px solid rgba(0,0,0,.078); }
+            .main section     { display: flex; flex-direction: column; flex-wrap: wrap; flex: 1; min-width: 220px; background: white; margin: 1rem; padding: 1rem; }
+
+        </style>
+    <!-- DEMO STYLES: END -->
+
+    <link rel="stylesheet" href="../../css/theme.css">
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <!-- build:css data-accordion.min.css -->
+    <link rel="stylesheet" href="data-accordion.css">
+    <!-- endbuild -->
+
+  </head>
+<!-- HEAD: END -->
+
+  <body class="flex-vertical mdc-typography">
+
+<!-- HEADER: START -->
+    <header class="mdc-toolbar mdc-toolbar--fixed" data-ajax="../../partials/header.html"></header>
+<!-- HEADER: END -->
+
+<!-- NAVIGATION: START -->
+    <aside class="mdc-drawer mdc-drawer--temporary mdc-typography">
+        <nav class="mdc-drawer__drawer">
+            <nav id="icon-with-text-demo" class="mdc-drawer__content mdc-list">
+                                
+                <div class="mdc-list-group" sheetsu="https://sheetsu.com/apis/v1.0su/b1990aff7e3e">
+
+                    {{HTML}}
+                    
+                    <ul class="mdc-list mdc-list--one-line mdc-list--avatar-list">
+                        <li class="mdc-list-item" data-mdc-auto-init="MDCRipple">
+                            <span class="mdc-list-item__graphic" role="presentation">
+                                <i class="material-icons" aria-hidden="true">{{ICON}}</i>
+                            </span>
+                            <a href="{{LINK}}" class="mdc-list-item__text">{{LABEL}}</a>
+                        </li>
+                    </ul>
+
+                </div> 
+                
+            </nav>
+        </nav>
+    </aside>
+<!-- NAVIGATION: END -->
+
+<!-- MAIN: START -->
+<main class="flex-vertical mdc-toolbar-fixed-adjust">
+
+    <!-- MAIN -->
+    <article class="flex-horizontal center-start wrap main">
+
+
+        <!-- NEW
+        ::::::::::::::::::::::::::::::::::::::::: -->
+        <section class="flex-1">
+            <h2>Accordion Fixed</h2>
+    
+            <div class="mdc-list" data-accordion="fixed" data-target=".some-link" data-container=".some-container">
+
+                <!-- Accordion Button -->
+                <a class="some-link mdc-list-item" href="javascript:void(0)">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">add</i>Category
+                </a>
+    
+                <!-- Category Items -->
+                <nav class="some-container">
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">keyboard_arrow_right</i>Item
+                    </a>
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">keyboard_arrow_right</i>Item
+                    </a>
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">keyboard_arrow_right</i>Item
+                    </a>
+                </nav>
+                <hr class="mdc-list-divider">
+
+                <!-- Accordion Button -->
+                <a class="some-link mdc-list-item" href="javascript:void(0)">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">add</i>Category
+                </a>
+    
+                <!-- Category Items -->
+                <nav class="some-container">
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">keyboard_arrow_right</i>Item
+                    </a>
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">keyboard_arrow_right</i>Item
+                    </a>
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">keyboard_arrow_right</i>Item
+                    </a>
+                </nav>
+                <hr class="mdc-list-divider">
+
+                <!-- Accordion Button -->
+                <a class="some-link mdc-list-item" href="javascript:void(0)">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">add</i>Category
+                </a>
+    
+                <!-- Category Items -->
+                <nav class="some-container">
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">keyboard_arrow_right</i>Item
+                    </a>
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">keyboard_arrow_right</i>Item
+                    </a>
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">keyboard_arrow_right</i>Item
+                    </a>
+                </nav>
+                <hr class="mdc-list-divider">
+            </div>
+        </section>
+
+
+        <!-- Accordion Fixed 
+        ::::::::::::::::::::::::::::::::::::::::: -->
+        <section class="flex-1">
+            <h2>Accordion Toggle</h2>
+    
+            <div class="mdc-list" data-accordion="toggle" data-target=".mdc-list-item" data-container=".yo">
+
+                <!-- Accordion Button -->
+                <a class="mdc-list-item" href="javascript:void(0)">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">add</i>Category
+                </a>
+    
+                <!-- Category Items -->
+                <nav class="yo">
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">keyboard_arrow_right</i>Item
+                    </a>
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">keyboard_arrow_right</i>Item
+                    </a>
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">keyboard_arrow_right</i>Item
+                    </a>
+                </nav>
+                <hr class="mdc-list-divider">
+
+                <!-- Accordion Button -->
+                <a class="mdc-list-item" href="javascript:void(0)">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">add</i>Category
+                </a>
+    
+                <!-- Category Items -->
+                <nav class="yo">
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">keyboard_arrow_right</i>Item
+                    </a>
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">keyboard_arrow_right</i>Item
+                    </a>
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">keyboard_arrow_right</i>Item
+                    </a>
+                </nav>
+                <hr class="mdc-list-divider">
+
+                <!-- Accordion Button -->
+                <a class="mdc-list-item" href="javascript:void(0)">
+                    <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">add</i>Category
+                </a>
+    
+                <!-- Category Items -->
+                <nav class="yo">
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">keyboard_arrow_right</i>Item
+                    </a>
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">keyboard_arrow_right</i>Item
+                    </a>
+                    <a class="mdc-list-item" href="#">
+                        <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">keyboard_arrow_right</i>Item
+                    </a>
+                </nav>
+                <hr class="mdc-list-divider">
+            </div>
+        </section>
+
+    </article>
+</main>
+<!-- MAIN: END -->
+
+<!-- DEV SCRIPTS: START -->
+    <script src="https://load.sheetsu.com"></script>
+    <script src="../../js/oneezy-js.js"></script>
+<!-- DEV SCRIPTS: END -->
+
+<!-- PRODUCTION SCRIPTS: START -->
+    <!-- build:js data-accordion.min.js -->
+    <script src="data-accordion.js"></script>
+    <!-- endbuild  -->
+<!-- PRODUCTION SCRIPTS: END -->
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+    "name": "Americommerce",
+    "icons": [
+        {
+            "src": "images/icons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "images/icons/android-chrome-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ff703e",
+    "background_color": "#ff703e",
+    "start_url": "https://americommerce.com",
+    "display": "standalone",
+    "orientation": "portrait"
+}

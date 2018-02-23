@@ -1,6 +1,6 @@
 /* Clone Links
 *********************************/
-function dataClone() {
+function dataCLONE() {
 
 
   $('[data-clone]').each(function (){
@@ -16,6 +16,6 @@ function dataClone() {
 
 }
 
-$(document).ready(function() {
-  dataClone();
-});
+// $(document).ready(function() {
+//   dataCLONE();
+// });

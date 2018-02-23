@@ -68,12 +68,12 @@ function dataCOUNT() {
   
 }
 
-$(document).ready(function() {
-    dataCHART();
-    dataCOUNT();
-});
+// $(document).ready(function() {
+//     dataCHART();
+//     dataCOUNT();
+// });
 
 
-$( "input, textarea" ).change(function() {
-    dataCOUNT();
-});
+// $( "input, textarea" ).change(function() {
+//     dataCOUNT();
+// });

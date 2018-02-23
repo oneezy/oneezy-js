@@ -1,0 +1,24 @@
+/* Bar Charts 
+**********************************/
+.bar-chart { 
+  background: rgba(0,0,0,.12); 
+  position: relative; 
+  z-index: 0; 
+  overflow: hidden; 
+  width: 100%; 
+  display: block; 
+  font-size: 12px; 
+  padding: 2px 0 2px 4px; 
+}
+
+.bar-chart i { 
+  position: absolute; 
+  top: 0; 
+  right: 100%; 
+  bottom: 0; 
+  z-index: -1; 
+  background: lime; 
+  display: block; 
+  width: 100%; 
+  transition: .22s ease-in-out; transform: translateX(0);
+}

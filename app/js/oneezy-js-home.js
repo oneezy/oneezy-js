@@ -15,20 +15,14 @@ Oneezy JS (JS)
     *************************/
     "components/data-ajax/data-ajax.js",
     "components/data-count/data-count.js",
-    "components/data-clone/data-clone.js",
-    "components/data-animate/data-animate.js",
     "components/data-bind/data-bind.js",
-    "components/data-code/data-code.js",
-    "components/data-event/data-event.js",
 
     /* MDC Components 
     *************************/
     "components/mdc-toolbar/mdc-toolbar.js",
-    "components/mdc-accordion/mdc-accordion.js",
     "components/mdc-buttons/mdc-buttons.js",
     "components/mdc-image/mdc-image.js",
     "components/mdc-table/mdc-table.js",
-    "components/mdc-textfields/mdc-textfields.js",
 
     /* Run functions
     *************************/

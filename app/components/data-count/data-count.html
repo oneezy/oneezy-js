@@ -52,41 +52,19 @@
         .percent     						{ color: black; position: relative; opacity: .5; }
         .percent:after    				{ content: "%"; }
 
-        /* Bar Charts 
-        **********************************/
-        .bar-chart { 
-            background: rgba(0,0,0,.12); 
-            position: relative; 
-            z-index: 0; 
-            overflow: hidden; 
-            width: 100%; 
-            display: block; 
-            font-size: 12px; 
-            padding: 2px 0 2px 4px; 
-        }
-
-        .bar-chart i { 
-            position: absolute; 
-            top: 0; 
-            right: 100%; 
-            bottom: 0; 
-            z-index: -1; 
-            background: lime; 
-            display: block; 
-            width: 100%; 
-            transition: .22s ease-in-out; transform: translateX(0);
-        }
-
         .problem .stats p span:nth-child(2) { background: #FF80AB; }
         .problem .bar-chart { color: black; }
         .problem .bar-chart i { background: #FF80AB; }
     </style>
 <!-- DEMO STYLES: END -->
 
-    <!-- build:css css/styles.min.css -->
     <link rel="stylesheet" href="../../css/theme.css">
     <link rel="stylesheet" href="../../css/style.css">
+
+    <!-- build:css data-count.min.css -->
+    <link rel="stylesheet" href="data-count.css">
     <!-- endbuild -->
+
   </head>
 <!-- HEAD: END -->
 
@@ -405,7 +383,8 @@
 
 
 <!-- PRODUCTION SCRIPTS: START -->
-    <!-- build:js js/scripts.min.js -->
+    <!-- build:js data-count.min.js -->
+    <script src="data-count.js"></script>
     <!-- endbuild  -->
 <!-- PRODUCTION SCRIPTS: END -->
 

@@ -29,6 +29,9 @@ $(document).ready(function() {
             dataTITLE();
             dataBIND();
             dataCLIPBOARD();
+            dataCHART();
+            dataCOUNT();
+            dataACCORDION();
             // Initialize UI last
             mdc.autoInit();
 
@@ -36,4 +39,9 @@ $(document).ready(function() {
 
     });
 
+});
+
+
+$( "input, textarea" ).change(function() {
+    dataCOUNT();
 });

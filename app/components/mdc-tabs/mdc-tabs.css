@@ -1,0 +1,6 @@
+.dot { background: rgba(0,0,0,.2); display: block; width: 20px; height: 20px; }
+.dot.active { background: rgba(0,0,0,.78); }
+
+.panels { padding: 8px; border: 1px solid #ccc; border-radius: 4px; margin-top: 8px; }
+.panel { display: none; }
+.panel.active { display: block; }

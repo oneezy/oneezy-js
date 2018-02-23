@@ -1,0 +1,32 @@
+[data-clipboard]      { width: 100%; }
+[data-clipboard] span { display: block; transition: .22s ease-in-out; width: 100%; }
+
+[data-clipboard]:before { 
+  transition: .22s ease-in-out; 
+  content: ""; 
+  background: lime; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  opacity: 0;
+}
+
+[data-clipboard].success:before { opacity: 1; }
+
+[data-clipboard] span:after { 
+  transition: .22s ease-in-out; 
+  opacity: 0; 
+  content: ""; 
+  font-family: "Material Icons"; 
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 200%;
+  color: white; 
+  position: absolute;
+}
+
+[data-clipboard].success span         { transform: translateY(-200%); }
+[data-clipboard].success span:after   { content: "\E5CA"; opacity: 1; }

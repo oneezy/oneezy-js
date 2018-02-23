@@ -39,51 +39,16 @@
 
             .fab-wrapper .mdc-fab--mini { margin: 0 0 1rem; background: var(--mdc-theme-secondary-light); font-size: 18px; }
 
-            .active { background: skyblue !important; }
-
-
-            [data-clipboard]  { width: 100%; }
-            [data-clipboard] span { display: block; transition: .22s ease-in-out; width: 100%; }
-
-            [data-clipboard]:before { 
-              transition: .22s ease-in-out; 
-              content: ""; 
-              background: lime; 
-              position: absolute; 
-              top: 0; 
-              left: 0; 
-              width: 100%; 
-              height: 100%; 
-              opacity: 0;
-            }
-
-            [data-clipboard].success:before { opacity: 1; }
-
-            [data-clipboard] span:after { 
-              transition: .22s ease-in-out; 
-              opacity: 0; 
-              content: ""; 
-              font-family: "Material Icons"; 
-              display: block;
-              width: 100%;
-              height: 100%;
-              top: 200%;
-              color: white; 
-              position: absolute;
-            }
-
-            [data-clipboard].success span { transform: translateY(-200%); }
-            [data-clipboard].success span:after { content: "\E5CA"; opacity: 1; }
-
-            .failure { background: red !important; }
-
         </style>
     <!-- DEMO STYLES: END -->
 
-    <!-- build:css css/styles.min.css -->
     <link rel="stylesheet" href="../../css/theme.css">
     <link rel="stylesheet" href="../../css/style.css">
+
+    <!-- build:css data-clipboard.min.css -->
+    <link rel="stylesheet" href="data-clipboard.css">
     <!-- endbuild -->
+
   </head>
 <!-- HEAD: END -->
 
@@ -783,7 +748,8 @@
 <!-- DEV SCRIPTS: END -->
 
 <!-- PRODUCTION SCRIPTS: START -->
-    <!-- build:js js/scripts.min.js -->
+    <!-- build:js data-clipboard.min.js -->
+    <script src="data-clipboard.js"></script>
     <!-- endbuild  -->
 <!-- PRODUCTION SCRIPTS: END -->
 

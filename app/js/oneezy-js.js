@@ -14,6 +14,7 @@ Oneezy JS (JS)
   /* Data Components 
   *************************/
   "../data-ajax/data-ajax.js",
+  "../data-accordion/data-accordion.js",
   "../data-count/data-count.js",
   // "../data-clone/data-clone.js",
   // "../data-animate/data-animate.js",
@@ -25,7 +26,6 @@ Oneezy JS (JS)
   /* MDC Components 
   *************************/
   "../mdc-toolbar/mdc-toolbar.js",
-  "../mdc-accordion/mdc-accordion.js",
   // "../mdc-buttons/mdc-buttons.js",
   // "../mdc-image/mdc-image.js",
   // "../mdc-table/mdc-table.js",
