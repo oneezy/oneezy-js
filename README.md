@@ -1,4 +1,6 @@
 # Oneezy JS
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/oneezy/oneezy-js.svg)](https://greenkeeper.io/)
 My personal collection of commonly used javascript.
 
 - Jquery
