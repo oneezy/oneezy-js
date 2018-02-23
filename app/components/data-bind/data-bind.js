@@ -80,32 +80,3 @@ function dataBIND() {
 
     });
 }
-
- 
-
-
-
-
-// demoReady(function() {
-//     [].forEach.call(document.querySelectorAll('.mdc-checkbox[data-js]'), function(checkbox) {
-//       var formField = checkbox.parentElement;
-//       var formFieldInstance = new mdc.formField.MDCFormField(formField);
-//       var checkboxInstance = new mdc.checkbox.MDCCheckbox(checkbox);
-//       formFieldInstance.input = checkboxInstance;
-//       var row = formField.parentElement;
-//       var indeterminateToggle = row.querySelector('.toggle-indeterminate');
-//       if (indeterminateToggle) {
-//         indeterminateToggle.addEventListener('click', function() {
-//           checkboxInstance.indeterminate = !checkboxInstance.indeterminate;
-//         });
-//       }
-//       var disabledToggle = row.querySelector('.toggle-disabled');
-//       if (disabledToggle) {
-//         disabledToggle.addEventListener('click', function() {
-//           checkboxInstance.disabled = !checkboxInstance.disabled;
-//         });
-//       }
-//     });
-//   });
-
-  
