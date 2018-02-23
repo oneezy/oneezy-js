@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" class="oneezy">
+
+<!-- HEAD: START -->
+  <head>
+    <title>Oneezy JS</title>
+    <meta name="description" content="Oneezy JS">
+    <meta name="keywords" content="oneezy js, oneezy-js, oneezy">
+
+    <div data-ajax="../../partials/head-meta.html"></div>
+
+    <!-- DEMO STYLES: START -->
+        <style>
+            * { margin: 0; padding: 0; box-sizing: border-box; }
+            body { background: #f2f2f2; }
+            article { height: 40vh; }
+            article section { height: 100%; margin: 1rem 2rem; padding: 1rem; }
+
+            /* Main 
+            **********************************/
+            .main             { background: #f2f2f2; border-top: 1px solid rgba(0,0,0,.078); }
+            .main section     { background: white; }
+            
+            .dot { background: rgba(0,0,0,.2); display: block; width: 20px; height: 20px; }
+            .dot.active { background: rgba(0,0,0,.78); }
+            
+            .panels { padding: 8px; border: 1px solid #ccc; border-radius: 4px; margin-top: 8px; }
+            .panel { display: none; }
+            .panel.active { display: block; }
+
+        </style>
+    <!-- DEMO STYLES: END -->
+
+    <!-- build:css css/styles.min.css -->
+    <link rel="stylesheet" href="../../css/theme.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- endbuild -->
+  </head>
+<!-- HEAD: END -->
+
+  <body class="flex-vertical mdc-typography">
+
+<!-- HEADER: START -->
+    <header class="mdc-toolbar mdc-toolbar--fixed" data-ajax="../../partials/header.html"></header>
+<!-- HEADER: END -->
+
+<!-- NAVIGATION: START -->
+    <aside class="mdc-drawer mdc-drawer--temporary mdc-typography">
+        <nav class="mdc-drawer__drawer">
+            <nav id="icon-with-text-demo" class="mdc-drawer__content mdc-list">
+                                
+                <div class="mdc-list-group" sheetsu="https://sheetsu.com/apis/v1.0su/b1990aff7e3e">
+
+                    {{HTML}}
+                    
+                    <ul class="mdc-list mdc-list--one-line mdc-list--avatar-list">
+                        <li class="mdc-list-item" data-mdc-auto-init="MDCRipple">
+                            <span class="mdc-list-item__graphic" role="presentation">
+                                <i class="material-icons" aria-hidden="true">{{ICON}}</i>
+                            </span>
+                            <a href="{{LINK}}" class="mdc-list-item__text">{{LABEL}}</a>
+                        </li>
+                    </ul>
+
+                </div> 
+                
+            </nav>
+        </nav>
+    </aside>
+<!-- NAVIGATION: END -->
+
+
+
+
+
+
+<main class="flex-vertical mdc-toolbar-fixed-adjust">
+
+
+    <!-- TABS: Normal
+    ***************************************************************************** -->
+    <article class="flex-vertical main">
+        <section>
+
+            <!-- CONTAINER: Tabs
+            ******************************* -->
+            <header>
+                <nav class="mdc-tab-bar" role="tablist" 
+                    data-tabs 
+                    data-tabs--dots="#dotsOne" 
+                    data-tabs--panels="#panelsOne">
+
+                    <!-- Tabs -->
+                    <a role="tab" aria-controls="panel-1" class="mdc-tab mdc-tab--active" href="#panel-1">Item 1</a>
+                    <a role="tab" aria-controls="panel-2" class="mdc-tab" href="#panel-2">Item 2</a>
+                    <a role="tab" aria-controls="panel-3" class="mdc-tab" href="#panel-3">Item 3</a>
+        
+                    <!-- Indicator Bar -->
+                    <span class="mdc-tab-bar__indicator"></span>
+                </nav>
+            </header>
+
+            <!-- CONTAINER: Views
+            ******************************* -->
+            <div>
+
+                <!-- Panels -->
+                <div id="panelsOne" class="panels">
+                    <div class="panel active" id="panel-1" role="tabpanel" aria-hidden="false">Item 1</div>
+                    <div class="panel" id="panel-2" role="tabpanel" aria-hidden="true">Item 2</div>
+                    <div class="panel" id="panel-3" role="tabpanel" aria-hidden="true">Item 3</div>
+                </div>
+
+                <!-- Dots -->
+                <div id="dotsOne" class="dots flex-horizontal center-center">
+                    <a class="dot active" data-trigger="panel-1" href="#panel-1"></a>
+                    <a class="dot" data-trigger="panel-2" href="#panel-2"></a>
+                    <a class="dot" data-trigger="panel-3" href="#panel-3"></a>
+                </div>
+
+            </div>
+        </section>
+
+    </article>
+    <!-- TABS: Normal
+    ***************************************************************************** -->
+
+    <!-- TABS: Nested
+    ***************************************************************************** -->
+    <article class="flex-vertical main">
+        <section>
+
+            <!-- CONTAINER: Tabs
+            ******************************* -->
+            <header>
+                <nav class="mdc-tab-bar" role="tablist" 
+                    data-tabs 
+                    data-tabs--dots="#dotsTwo" 
+                    data-tabs--panels="#panelsTwo">
+
+                    <!-- Tabs -->
+                    <a role="tab" aria-controls="panel-4" class="mdc-tab mdc-tab--active" href="#panel-4">Item 4</a>
+                    <a role="tab" aria-controls="panel-5" class="mdc-tab" href="#panel-5">Item 5</a>
+                    <a role="tab" aria-controls="panel-6" class="mdc-tab" href="#panel-6">Item 6</a>
+
+                    <!-- Indicator Bar -->
+                    <span class="mdc-tab-bar__indicator"></span>
+                </nav>
+            </header>
+
+            <!-- CONTAINER: Views
+            ******************************* -->
+            <div>
+
+                <!-- Panels-two -->
+                <div id="panelsTwo" class="panels">
+                    <div class="panel active" id="panel-4" role="tabpanel" aria-hidden="false">
+
+
+
+                        <!-- CONTAINER: Nested Tabs
+                        ******************************* -->
+                        <header>
+                            <nav class="mdc-tab-bar" role="tablist" 
+                                data-tabs 
+                                data-tabs--dots="#dotsThree" 
+                                data-tabs--panels="#panelsThree">
+            
+                                <!-- Tabs -->
+                                <a role="tab" aria-controls="panel-7" class="mdc-tab mdc-tab--active" href="#panel-7">Item 7</a>
+                                <a role="tab" aria-controls="panel-8" class="mdc-tab" href="#panel-8">Item 8</a>
+                                <a role="tab" aria-controls="panel-9" class="mdc-tab" href="#panel-9">Item 9</a>
+            
+                                <!-- Indicator Bar -->
+                                <span class="mdc-tab-bar__indicator"></span>
+                            </nav>
+                        </header>
+            
+                        <!-- CONTAINER: Nested Views
+                        ******************************* -->
+                        <div>
+            
+                            <!-- Panels-Three -->
+                            <div id="panelsThree" class="panels">
+                                <div class="panel active" id="panel-7" role="tabpanel" aria-hidden="false">Item 7</div>
+                                <div class="panel" id="panel-8" role="tabpanel" aria-hidden="true">Item 8</div>
+                                <div class="panel" id="panel-9" role="tabpanel" aria-hidden="true">Item 9</div>
+                            </div>
+            
+                            <!-- Dots-Three -->
+                            <div id="dotsThree" class="dots flex-horizontal center-center">
+                                <a class="dot active" data-trigger="panel-7" href="#panel-7"></a>
+                                <a class="dot" data-trigger="panel-8" href="#panel-8"></a>
+                                <a class="dot" data-trigger="panel-9" href="#panel-9"></a>
+                            </div>
+            
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="panel" id="panel-5" role="tabpanel" aria-hidden="true">Item 5</div>
+                    <div class="panel" id="panel-6" role="tabpanel" aria-hidden="true">Item 6</div>
+                </div>
+
+                <!-- Dots-two -->
+                <div id="dotsTwo" class="dots flex-horizontal center-center">
+                    <a class="dot active" data-trigger="panel-4" href="#panel-4"></a>
+                    <a class="dot" data-trigger="panel-5" href="#panel-5"></a>
+                    <a class="dot" data-trigger="panel-6" href="#panel-6"></a>
+                </div>
+
+            </div>
+        </section>
+    </article>
+    <!-- TABS: Nested
+    ***************************************************************************** -->
+
+</main>
+
+
+
+<!-- DEV SCRIPTS: START -->
+    <script src="https://load.sheetsu.com"></script>
+    <script src="../../js/oneezy-js.js"></script>
+<!-- DEV SCRIPTS: END -->
+
+<!-- PRODUCTION SCRIPTS: START -->
+    <!-- build:js js/scripts.min.js -->
+    <!-- endbuild  -->
+<!-- PRODUCTION SCRIPTS: END -->
+
+  </body>
+</html>

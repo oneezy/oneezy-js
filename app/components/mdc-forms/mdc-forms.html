@@ -1,0 +1,366 @@
+<!-- 
+    Google Sheet (Sheetsu): https://docs.google.com/spreadsheets/d/1m1A9NHg7UvOq-63hywycmvLkCk0LNyRC_d-MxE-3SQ0/edit#gid=1294688618
+-->
+
+<!DOCTYPE html>
+<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" class="oneezy">
+
+<!-- HEAD: START -->
+  <head>
+    <title>Oneezy JS</title>
+    <meta name="description" content="Oneezy JS">
+    <meta name="keywords" content="oneezy js, oneezy-js, oneezy">
+
+    <div data-ajax="../../partials/head-meta.html"></div>
+
+    <!-- DEMO STYLES: START -->
+        <style>
+            * { margin: 0; padding: 0; box-sizing: border-box; }
+            body { background: #f2f2f2; }
+            textarea { max-width: 100%; padding: .5rem; border: 1px solid black; border-radius: 4px; overflow: hidden; }
+            [disabled] { opacity: .34; }
+
+            ul { list-style: none; }
+
+            /* Header 
+            **********************************/
+            .header { padding: 2rem 0 3rem; background: #fff; }
+            .header .checked     { color: rgba(255,255,255,.5); }
+            .header .total      { color: white; }
+            .header .percent    { color: skyblue; }
+            .header .percent:after    { content: "%"; font-size: 1.5rem; font-weight: 300; display: inline-block; position: absolute; top: 10px; left: 100%; }
+
+            .header section { border-radius: 100%; background: black; width: 200px; height: 200px; color: white; }
+            .header .checked { display: inline-block; color: rgba(255,255,255,.5); font-size: 1.5rem; }
+            .header .checked:after { content: " out of "; font-size: 12px; }
+            .header .total { font-size: 1.5rem; font-weight: 300; }
+            .header .percent { font-size: 4rem; font-weight: 700; }
+
+            /* Main 
+            **********************************/
+            .main { background: #f2f2f2; border-top: 1px solid rgba(0,0,0,.078); }
+            .main section     { display: flex; flex-direction: column; flex-wrap: wrap; flex: 1; min-width: 220px; background: white; margin: 1rem; padding: 1rem; }
+            .main section > *:not(h3) { margin: 0 0 10px; }
+
+            /* Stats 
+            **********************************/
+            .stats   							{ background: #f2f2f2; padding: 5px; margin: 0; }
+            .stats p 							{ margin: 2px 0; font-size: 12px; font-weight: normal; text-transform: uppercase; }
+            .stats p span:nth-child(2) 	{ display: inline-block; padding: .2rem .5rem; margin: 0 1px 0 5px; font-weight: 700; color: rgba(0,0,0,.78); border-radius: 3px;}
+
+            .stats p span.checked     		{ background: #ccc; position: relative; }
+            .stats p span.total       		{ background: #B3E5FC; position: relative; }
+
+            .checked     						{ color: gray; position: relative; }
+            .total       						{ color: blue; position: relative; }
+            .percent     						{ color: black; position: relative; opacity: .5; }
+            .percent:after    				{ content: "%"; }
+
+            /* Bar Charts 
+            **********************************/
+            .bar-chart { 
+                background: rgba(0,0,0,.12); 
+                position: relative; 
+                z-index: 0; 
+                overflow: hidden; 
+                width: 100%; 
+                display: block; 
+                font-size: 12px; 
+                padding: 2px 0 2px 4px; 
+            }
+
+            .bar-chart i { 
+                position: absolute; 
+                top: 0; 
+                right: 100%; 
+                bottom: 0; 
+                z-index: -1; 
+                background: lime; 
+                display: block; 
+                width: 100%; 
+                transition: .22s ease-in-out; transform: translateX(0);
+            }
+
+            .problem .stats p span:nth-child(2) { background: #FF80AB; }
+            .problem .bar-chart { color: black; }
+            .problem .bar-chart i { background: #FF80AB; }
+        </style>
+    <!-- DEMO STYLES: END -->
+
+    <!-- build:css css/styles.min.css -->
+    <link rel="stylesheet" href="../../css/theme.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- endbuild -->
+  </head>
+<!-- HEAD: END -->
+
+  <body class="flex-vertical mdc-typography">
+
+<!-- HEADER: START -->
+    <header class="mdc-toolbar mdc-toolbar--fixed" data-ajax="../../partials/header.html"></header>
+<!-- HEADER: END -->
+
+<!-- NAVIGATION: START -->
+    <aside class="mdc-drawer mdc-drawer--temporary mdc-typography">
+        <nav class="mdc-drawer__drawer">
+            <nav id="icon-with-text-demo" class="mdc-drawer__content mdc-list">
+                                
+                <div class="mdc-list-group" sheetsu="https://sheetsu.com/apis/v1.0su/b1990aff7e3e">
+
+                    {{HTML}}
+                    
+                    <ul class="mdc-list mdc-list--one-line mdc-list--avatar-list">
+                        <li class="mdc-list-item" data-mdc-auto-init="MDCRipple">
+                            <span class="mdc-list-item__graphic" role="presentation">
+                                <i class="material-icons" aria-hidden="true">{{ICON}}</i>
+                            </span>
+                            <a href="{{LINK}}" class="mdc-list-item__text">{{LABEL}}</a>
+                        </li>
+                    </ul>
+
+                </div> 
+                
+            </nav>
+        </nav>
+    </aside>
+<!-- NAVIGATION: END -->
+
+<!-- MAIN: START -->
+<main class="flex-vertical">
+    
+    <!-- HERO -->
+    <article class="flex-vertical start-center header">
+        <section class="flex-vertical center-center">
+            <div class="flex-horizontal center-start">Header</div>
+        </section>
+    </article>
+
+    <!-- MAIN -->
+    <article class="flex-horizontal center-start wrap main">
+
+
+        <!-- All Types -->
+            <!-- <section data-title="All Types"
+                    class="mdc-card"
+                    sheetsu="https://sheetsu.com/apis/v1.0su/f64238fdcb17" 
+                    sheetsu-sheet="mdc-forms">
+
+                    <div data-form
+                        data-wrapper--if="{{wrapperIF}}"
+                        data-wrapper--init="{{wrapperINIT}}"
+                        data-wrapper--class="{{wrapperCLASS}}"
+
+                        data-input--type="{{inputTYPE}}"
+                        data-input--id="{{inputID}}"
+                        data-input--name="{{inputNAME}}"
+                        data-input--autocomplete="{{inputAUTO}}"
+                        data-input--min="{{inputMIN}}"
+                        data-input--max="{{inputMAX}}"
+                        data-input--step="{{inputSTEP}}"
+                        data-input--value="{{inputVALUE}}"
+                        data-input--aria="{{inputARIA}}"
+                        data-input--checked="{{inputCHECKED}}"
+                        data-input--required="{{inputREQUIRED}}"
+                        data-input--disabled="{{inputDISABLED}}"
+
+                        data-label--text="{{labelTEXT}}"
+                        data-label--icon="{{labelICON}}"
+
+                        data-message--text="{{messageTEXT}}"
+                        data-message--class="{{messageCLASS}}">
+                    </div>
+            </section> -->
+        <!-- All Types -->
+
+        <!-- Text Fields -->
+        <section data-title="Text Fields"
+                 class="mdc-card"
+                 sheetsu="https://sheetsu.com/apis/v1.0su/f64238fdcb17" 
+                 sheetsu-sheet="mdc-forms"
+                 sheetsu-search='{"wrapperINIT": "MDCTextField"}'>
+
+                <div data-form
+                     data-wrapper--init="{{wrapperINIT}}"
+                     data-wrapper--class="{{wrapperCLASS}}"
+                     data-wrapper--if="{{wrapperIF}}"
+                     data-input--type="{{inputTYPE}}"
+                     data-input--id="{{inputID}}"
+                     data-input--name="{{inputNAME}}"
+                     data-input--autocomplete="{{inputAUTO}}"
+                     data-input--min="{{inputMIN}}"
+                     data-input--max="{{inputMAX}}"
+                     data-input--aria="{{inputARIA}}"
+                     data-input--value="{{inputVALUE}}"
+                     data-input--checked="{{inputCHECKED}}"
+                     data-input--required="{{inputREQUIRED}}"
+                     data-input--disabled="{{inputDISABLED}}"
+                     data-label--text="{{labelTEXT}}"
+                     data-label--icon="{{labelICON}}"
+                     data-label--id="{{labelID}}"
+                     data-message--text="{{messageTEXT}}"
+                     data-message--class="{{messageCLASS}}">
+                </div>
+        </section>
+        <!-- Text Fields -->
+
+
+
+        <!-- Textarea -->
+        <section data-title="Textareas"
+                 class="mdc-card"
+                 sheetsu="https://sheetsu.com/apis/v1.0su/f64238fdcb17" 
+                 sheetsu-sheet="mdc-forms"
+                 sheetsu-search='{"wrapperIF": "MDCTextFieldTextarea"}'>
+
+                <div data-form
+                     data-wrapper--init="{{wrapperINIT}}"
+                     data-wrapper--class="{{wrapperCLASS}}"
+                     data-wrapper--if="{{wrapperIF}}"
+                     data-input--type="{{inputTYPE}}"
+                     data-input--id="{{inputID}}"
+                     data-input--aria="{{inputARIA}}"
+                     data-input--value="{{inputVALUE}}"
+                     data-input--required="{{inputREQUIRED}}"
+                     data-input--disabled="{{inputDISABLED}}"
+                     data-label--text="{{labelTEXT}}"
+                     data-label--id="{{labelID}}">
+                </div>
+        </section>
+        <!-- Text Fields -->
+
+
+
+        <!-- Sliders -->
+        <section data-title="Sliders"
+                 class="mdc-card"
+                 sheetsu="https://sheetsu.com/apis/v1.0su/f64238fdcb17" 
+                 sheetsu-sheet="mdc-forms"
+                 sheetsu-search='{"inputTYPE": "slider"}'>
+
+                <div data-form
+                     data-wrapper--init="{{wrapperINIT}}"
+                     data-wrapper--class="{{wrapperCLASS}}"
+                     data-input--type="{{inputTYPE}}"
+                     data-input--id="{{inputID}}"
+                     data-input--value="{{inputVALUE}}"
+                     data-input--min="{{inputMIN}}"
+                     data-input--max="{{inputMAX}}"
+                     data-input--step="{{inputSTEP}}"
+                     data-input--disabled="{{inputDISABLED}}"
+                     data-label--text="{{labelTEXT}}"
+                     data-label--icon="{{labelICON}}">
+                </div>
+        </section>
+        <!-- Sliders -->
+
+        
+
+        <section class="mdc-card">
+
+
+            <!-- Switches -->
+            <div data-title="Switches"
+                 sheetsu="https://sheetsu.com/apis/v1.0su/f64238fdcb17" 
+                 sheetsu-sheet="mdc-forms"
+                 sheetsu-search='{"inputTYPE": "switch"}'>
+
+                <div data-form
+                     data-wrapper--init="{{wrapperINIT}}"
+                     data-wrapper--class="{{wrapperCLASS}}"
+                     data-input--type="{{inputTYPE}}"
+                     data-input--id="{{inputID}}"
+                     data-input--name="{{inputNAME}}"
+                     data-input--autocomplete="{{inputAUTO}}"
+                     data-input--min="{{inputMIN}}"
+                     data-input--max="{{inputMAX}}"
+                     data-input--aria="{{inputARIA}}"
+                     data-input--checked="{{inputCHECKED}}"
+                     data-input--required="{{inputREQUIRED}}"
+                     data-input--disabled="{{inputDISABLED}}"
+                     data-label--text="{{labelTEXT}}"
+                     data-label--icon="{{labelICON}}"
+                     data-label--id="{{labelID}}"
+                     data-message--text="{{messageTEXT}}"
+                     data-message--class="{{messageCLASS}}">
+                </div>
+            </div>
+            <!-- Switches -->
+
+
+            <!-- Radios -->
+            <div data-title="Radio Buttons" 
+                 sheetsu="https://sheetsu.com/apis/v1.0su/f64238fdcb17" 
+                 sheetsu-sheet="mdc-forms" 
+                 sheetsu-search='{"inputTYPE": "radio"}'>
+
+                <div data-form
+                     data-wrapper--init="{{wrapperINIT}}"
+                     data-wrapper--class="{{wrapperCLASS}}"
+                     data-input--type="{{inputTYPE}}"
+                     data-input--id="{{inputID}}"
+                     data-input--name="{{inputNAME}}"
+                     data-input--autocomplete="{{inputAUTO}}"
+                     data-input--min="{{inputMIN}}"
+                     data-input--max="{{inputMAX}}"
+                     data-input--aria="{{inputARIA}}"
+                     data-input--checked="{{inputCHECKED}}"
+                     data-input--required="{{inputREQUIRED}}"
+                     data-input--disabled="{{inputDISABLED}}"
+                     data-label--text="{{labelTEXT}}"
+                     data-label--icon="{{labelICON}}"
+                     data-label--id="{{labelID}}"
+                     data-message--text="{{messageTEXT}}"
+                     data-message--class="{{messageCLASS}}">
+                </div>
+            </div>
+            <!-- Radios -->
+        
+        
+            <!-- Checkboxes -->
+            <div data-title="Checkboxes"
+                 sheetsu="https://sheetsu.com/apis/v1.0su/f64238fdcb17" 
+                 sheetsu-sheet="mdc-forms"
+                 sheetsu-search='{"inputTYPE": "checkbox"}'>
+
+                <div data-form
+                     data-wrapper--init="{{wrapperINIT}}"
+                     data-wrapper--class="{{wrapperCLASS}}"
+                     data-input--type="{{inputTYPE}}"
+                     data-input--id="{{inputID}}"
+                     data-input--name="{{inputNAME}}"
+                     data-input--autocomplete="{{inputAUTO}}"
+                     data-input--min="{{inputMIN}}"
+                     data-input--max="{{inputMAX}}"
+                     data-input--aria="{{inputARIA}}"
+                     data-input--checked="{{inputCHECKED}}"
+                     data-input--required="{{inputREQUIRED}}"
+                     data-input--disabled="{{inputDISABLED}}"
+                     data-label--text="{{labelTEXT}}"
+                     data-label--icon="{{labelICON}}"
+                     data-label--id="{{labelID}}"
+                     data-message--text="{{messageTEXT}}"
+                     data-message--class="{{messageCLASS}}">
+                </div>
+            </div>
+            <!-- Checkboxes -->
+            
+        </section>
+
+        
+
+    </article>
+</main>
+<!-- MAIN: END -->
+
+<!-- DEV SCRIPTS: START -->
+    <script src="https://load.sheetsu.com"></script>
+    <script src="../../js/oneezy-js.js"></script>
+<!-- DEV SCRIPTS: END -->
+
+<!-- PRODUCTION SCRIPTS: START -->
+    <!-- build:js js/scripts.min.js -->
+    <!-- endbuild  -->
+<!-- PRODUCTION SCRIPTS: END -->
+
+  </body>
+</html>

@@ -1,0 +1,687 @@
+<!-- 
+    Google Sheet (Sheetsu): https://docs.google.com/spreadsheets/d/1m1A9NHg7UvOq-63hywycmvLkCk0LNyRC_d-MxE-3SQ0/edit#gid=1294688618
+-->
+
+<!DOCTYPE html>
+<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" class="oneezy">
+
+<!-- HEAD: START -->
+  <head>
+    <title>Oneezy JS</title>
+    <meta name="description" content="Oneezy JS">
+    <meta name="keywords" content="oneezy js, oneezy-js, oneezy">
+
+    <div data-ajax="../../partials/head-meta.html"></div>
+
+    <!-- DEMO STYLES: START -->
+        <style>
+            * { margin: 0; padding: 0; box-sizing: border-box; }
+            body { background: #f2f2f2; }
+
+            /* Main 
+            **********************************/
+            .main { background: #f2f2f2; border-top: 1px solid rgba(0,0,0,.078); }
+            .main section     {background: white; margin: 1rem; padding: 1rem; }
+            .main section i { margin: .4rem; }
+
+        </style>
+    <!-- DEMO STYLES: END -->
+
+    <!-- build:css css/styles.min.css -->
+    <link rel="stylesheet" href="../../css/theme.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- endbuild -->
+  </head>
+<!-- HEAD: END -->
+
+  <body class="flex-vertical mdc-typography">
+
+<!-- HEADER: START -->
+    <header class="mdc-toolbar mdc-toolbar--fixed" data-ajax="../../partials/header.html"></header>
+<!-- HEADER: END -->
+
+<!-- NAVIGATION: START -->
+    <aside class="mdc-drawer mdc-drawer--temporary mdc-typography">
+        <nav class="mdc-drawer__drawer">
+            <nav id="icon-with-text-demo" class="mdc-drawer__content mdc-list">
+                                
+                <div class="mdc-list-group" sheetsu="https://sheetsu.com/apis/v1.0su/b1990aff7e3e">
+
+                    {{HTML}}
+                    
+                    <ul class="mdc-list mdc-list--one-line mdc-list--avatar-list">
+                        <li class="mdc-list-item" data-mdc-auto-init="MDCRipple">
+                            <span class="mdc-list-item__graphic" role="presentation">
+                                <i class="material-icons" aria-hidden="true">{{ICON}}</i>
+                            </span>
+                            <a href="{{LINK}}" class="mdc-list-item__text">{{LABEL}}</a>
+                        </li>
+                    </ul>
+
+                </div> 
+                
+            </nav>
+        </nav>
+    </aside>
+<!-- NAVIGATION: END -->
+
+<!-- MAIN: START -->
+<main class="flex-vertical mdc-toolbar-fixed-adjust">
+
+    <!-- MAIN -->
+    <article class="flex-horizontal center-start wrap main">
+
+<!-- Material Icons -->
+      <section class="flex-horizontal start-start wrap" data-clipboard data-clipbpard--copy=".material-icons">
+        <i class="material-icons">airplanemode_inactive</i>
+        <i class="material-icons">battery_alert</i>
+        <i class="material-icons">battery_charging_full</i>
+        <i class="material-icons">battery_full</i>
+        <i class="material-icons">battery_std</i>
+        <i class="material-icons">battery_unknown</i>
+        <i class="material-icons">bluetooth</i>
+        <i class="material-icons">bluetooth_connected</i>
+        <i class="material-icons">bluetooth_disabled</i>
+        <i class="material-icons">text_format</i>
+        <i class="material-icons">unarchive</i>
+        <i class="material-icons">undo</i>
+        <i class="material-icons">weekend</i>
+        <i class="material-icons">access_alarm</i>
+        <i class="material-icons">access_alarms</i>
+        <i class="material-icons">access_time</i>
+        <i class="material-icons">add_alarm</i>
+        <i class="material-icons">airplanemode_active</i>
+        <i class="material-icons">date_range</i>
+        <i class="material-icons">delete</i>
+        <i class="material-icons">delete_forever</i>
+        <i class="material-icons">description</i>
+        <i class="material-icons">dns</i>
+        <i class="material-icons">done</i>
+        <i class="material-icons">done_all</i>
+        <i class="material-icons">donut_large</i>
+        <i class="material-icons">donut_small</i>
+        <i class="material-icons">change_history</i>
+        <i class="material-icons">check_circle</i>
+        <i class="material-icons">chrome_reader_mode</i>
+        <i class="material-icons">class</i>
+        <i class="material-icons">code</i>
+        <i class="material-icons">compare_arrows</i>
+        <i class="material-icons">copyright</i>
+        <i class="material-icons">credit_card</i>
+        <i class="material-icons">dashboard</i>
+        <i class="material-icons">exposure_zero</i>
+        <i class="material-icons">bookmark_border</i>
+        <i class="material-icons">bug_report</i>
+        <i class="material-icons">build</i>
+        <i class="material-icons">cached</i>
+        <i class="material-icons">camera_enhance</i>
+        <i class="material-icons">card_giftcard</i>
+        <i class="material-icons">card_membership</i>
+        <i class="material-icons">card_travel</i>
+        <i class="material-icons">touch_app</i>
+        <i class="material-icons">filter_7</i>
+        <i class="material-icons">filter_6</i>
+        <i class="material-icons">filter_5</i>
+        <i class="material-icons">filter_4</i>
+        <i class="material-icons">filter_3</i>
+        <i class="material-icons">filter_2</i>
+        <i class="material-icons">filter_1</i>
+        <i class="material-icons">filter</i>
+        <i class="material-icons">toll</i>
+        <i class="material-icons">today</i>
+        <i class="material-icons">toc</i>
+        <i class="material-icons">timeline</i>
+        <i class="material-icons">thumbs_up_down</i>
+        <i class="material-icons">thumb_up</i>
+        <i class="material-icons">thumb_down</i>
+        <i class="material-icons">theaters</i>
+        <i class="material-icons">tab_unselected</i>
+        <i class="material-icons">tab</i>
+        <i class="material-icons">system_update_alt</i>
+        <i class="material-icons">swap_vertical_circle</i>
+        <i class="material-icons">swap_vert</i>
+        <i class="material-icons">zoom_out</i>
+        <i class="material-icons">zoom_in</i>
+        <i class="material-icons">youtube_searched_for</i>
+        <i class="material-icons">work</i>
+        <i class="material-icons">watch_later</i>
+        <i class="material-icons">feedback</i>
+        <i class="material-icons">find_in_page</i>
+        <i class="material-icons">find_replace</i>
+        <i class="material-icons">fingerprint</i>
+        <i class="material-icons">flight_land</i>
+        <i class="material-icons">flight_takeoff</i>
+        <i class="material-icons">flip_to_back</i>
+        <i class="material-icons">flip_to_front</i>
+        <i class="material-icons">g_translate</i>
+        <i class="material-icons">crop_rotate</i>
+        <i class="material-icons">crop_portrait</i>
+        <i class="material-icons">crop_original</i>
+        <i class="material-icons">crop_landscape</i>
+        <i class="material-icons">crop_free</i>
+        <i class="material-icons">crop_din</i>
+        <i class="material-icons">crop_7_5</i>
+        <i class="material-icons">crop_5_4</i>
+        <i class="material-icons">crop_3_2</i>
+        <i class="material-icons">exposure_plus_2</i>
+        <i class="material-icons">exposure_plus_1</i>
+        <i class="material-icons">exposure_neg_2</i>
+        <i class="material-icons">exposure_neg_1</i>
+        <i class="material-icons">exposure</i>
+        <i class="material-icons">edit</i>
+        <i class="material-icons">details</i>
+        <i class="material-icons">dehaze</i>
+        <i class="material-icons">crop_square</i>
+        <i class="material-icons">alarm_add</i>
+        <i class="material-icons">alarm_off</i>
+        <i class="material-icons">alarm_on</i>
+        <i class="material-icons">all_out</i>
+        <i class="material-icons">android</i>
+        <i class="material-icons">announcement</i>
+        <i class="material-icons">aspect_ratio</i>
+        <i class="material-icons">assessment</i>
+        <i class="material-icons">assignment</i>
+        <i class="material-icons">crop_16_9</i>
+        <i class="material-icons">crop</i>
+        <i class="material-icons">control_point_duplicate</i>
+        <i class="material-icons">control_point</i>
+        <i class="material-icons">compare</i>
+        <i class="material-icons">colorize</i>
+        <i class="material-icons">color_lens</i>
+        <i class="material-icons">collections_bookmark</i>
+        <i class="material-icons">collections</i>
+        <i class="material-icons">swap_horiz</i>
+        <i class="material-icons">supervisor_account</i>
+        <i class="material-icons">subject</i>
+        <i class="material-icons">store</i>
+        <i class="material-icons">stars</i>
+        <i class="material-icons">star_rate</i>
+        <i class="material-icons">spellcheck</i>
+        <i class="material-icons">speaker_notes_off</i>
+        <i class="material-icons">speaker_notes</i>
+        <i class="material-icons">shopping_cart</i>
+        <i class="material-icons">shopping_basket</i>
+        <i class="material-icons">shop_two</i>
+        <i class="material-icons">shop</i>
+        <i class="material-icons">settings_voice</i>
+        <i class="material-icons">settings_remote</i>
+        <i class="material-icons">settings_power</i>
+        <i class="material-icons">settings_phone</i>
+        <i class="material-icons">settings_overscan</i>
+        <i class="material-icons">av_timer</i>
+        <i class="material-icons">art_track</i>
+        <i class="material-icons">album</i>
+        <i class="material-icons">airplay</i>
+        <i class="material-icons">add_to_queue</i>
+        <i class="material-icons">warning</i>
+        <i class="material-icons">error_outline</i>
+        <i class="material-icons">error</i>
+        <i class="material-icons">add_alert</i>
+        <i class="material-icons">pets</i>
+        <i class="material-icons">picture_in_picture</i>
+        <i class="material-icons">picture_in_picture_alt</i>
+        <i class="material-icons">play_for_work</i>
+        <i class="material-icons">perm_data_setting</i>
+        <i class="material-icons">perm_contact_calendar</i>
+        <i class="material-icons">perm_camera_mic</i>
+        <i class="material-icons">payment</i>
+        <i class="material-icons">pan_tool</i>
+        <i class="material-icons">pageview</i>
+        <i class="material-icons">open_with</i>
+        <i class="material-icons">open_in_new</i>
+        <i class="material-icons">open_in_browser</i>
+        <i class="material-icons">explicit</i>
+        <i class="material-icons">equalizer</i>
+        <i class="material-icons">closed_caption</i>
+        <i class="material-icons">call_to_action</i>
+        <i class="material-icons">branding_watermark</i>
+        <i class="material-icons">settings_input_svideo</i>
+        <i class="material-icons">settings_input_hdmi</i>
+        <i class="material-icons">settings_input_composite</i>
+        <i class="material-icons">settings_input_component</i>
+        <i class="material-icons">assignment_ind</i>
+        <i class="material-icons">assignment_late</i>
+        <i class="material-icons">assignment_return</i>
+        <i class="material-icons">assignment_returned</i>
+        <i class="material-icons">assignment_turned_in</i>
+        <i class="material-icons">autorenew</i>
+        <i class="material-icons">backup</i>
+        <i class="material-icons">book</i>
+        <i class="material-icons">bookmark</i>
+        <i class="material-icons">perm_device_information</i>
+        <i class="material-icons">perm_identity</i>
+        <i class="material-icons">perm_media</i>
+        <i class="material-icons">perm_phone_msg</i>
+        <i class="material-icons">perm_scan_wifi</i>
+        <i class="material-icons">settings_bluetooth</i>
+        <i class="material-icons">settings_backup_restore</i>
+        <i class="material-icons">settings_applications</i>
+        <i class="material-icons">settings</i>
+        <i class="material-icons">search</i>
+        <i class="material-icons">schedule</i>
+        <i class="material-icons">rowing</i>
+        <i class="material-icons">rounded_corner</i>
+        <i class="material-icons">room</i>
+        <i class="material-icons">usb</i>
+        <i class="material-icons">storage</i>
+        <i class="material-icons">signal_wifi_off</i>
+        <i class="material-icons">signal_wifi_4_bar_lock</i>
+        <i class="material-icons">signal_wifi_4_bar</i>
+        <i class="material-icons">data_usage</i>
+        <i class="material-icons">brightness_medium</i>
+        <i class="material-icons">brightness_low</i>
+        <i class="material-icons">camera_rear</i>
+        <i class="material-icons">group_work</i>
+        <i class="material-icons">help</i>
+        <i class="material-icons">help_outline</i>
+        <i class="material-icons">highlight_off</i>
+        <i class="material-icons">history</i>
+        <i class="material-icons">wifi_tethering</i>
+        <i class="material-icons">wifi_lock</i>
+        <i class="material-icons">widgets</i>
+        <i class="material-icons">wallpaper</i>
+        <i class="material-icons">restore_page</i>
+        <i class="material-icons">restore</i>
+        <i class="material-icons">report_problem</i>
+        <i class="material-icons">reorder</i>
+        <i class="material-icons">remove_shopping_cart</i>
+        <i class="material-icons">gavel</i>
+        <i class="material-icons">get_app</i>
+        <i class="material-icons">gif</i>
+        <i class="material-icons">grade</i>
+        <i class="material-icons">settings_input_antenna</i>
+        <i class="material-icons">settings_ethernet</i>
+        <i class="material-icons">settings_cell</i>
+        <i class="material-icons">settings_brightness</i>
+        <i class="material-icons">query_builder</i>
+        <i class="material-icons">print</i>
+        <i class="material-icons">pregnant_woman</i>
+        <i class="material-icons">power_settings_new</i>
+        <i class="material-icons">polymer</i>
+        <i class="material-icons">favorite_border</i>
+        <i class="material-icons">favorite</i>
+        <i class="material-icons">face</i>
+        <i class="material-icons">extension</i>
+        <i class="material-icons">explore</i>
+        <i class="material-icons">exit_to_app</i>
+        <i class="material-icons">event_seat</i>
+        <i class="material-icons">event</i>
+        <i class="material-icons">euro_symbol</i>
+        <i class="material-icons">eject</i>
+        <i class="material-icons">add_a_photo</i>
+        <i class="material-icons">add_to_photos</i>
+        <i class="material-icons">adjust</i>
+        <i class="material-icons">assistant</i>
+        <i class="material-icons">assistant_photo</i>
+        <i class="material-icons">audiotrack</i>
+        <i class="material-icons">blur_circular</i>
+        <i class="material-icons">blur_linear</i>
+        <i class="material-icons">blur_off</i>
+        <i class="material-icons">brightness_high</i>
+        <i class="material-icons">brightness_auto</i>
+        <i class="material-icons">bluetooth_searching</i>
+        <i class="material-icons">track_changes</i>
+        <i class="material-icons">translate</i>
+        <i class="material-icons">trending_down</i>
+        <i class="material-icons">trending_flat</i>
+        <i class="material-icons">trending_up</i>
+        <i class="material-icons">turned_in</i>
+        <i class="material-icons">turned_in_not</i>
+        <i class="material-icons">update</i>
+        <i class="material-icons">verified_user</i>
+        <i class="material-icons">view_agenda</i>
+        <i class="material-icons">view_array</i>
+        <i class="material-icons">view_carousel</i>
+        <i class="material-icons">view_column</i>
+        <i class="material-icons">view_day</i>
+        <i class="material-icons">view_headline</i>
+        <i class="material-icons">view_list</i>
+        <i class="material-icons">view_module</i>
+        <i class="material-icons">view_quilt</i>
+        <i class="material-icons">view_stream</i>
+        <i class="material-icons">view_week</i>
+        <i class="material-icons">visibility</i>
+        <i class="material-icons">alarm</i>
+        <i class="material-icons">add_shopping_cart</i>
+        <i class="material-icons">account_circle</i>
+        <i class="material-icons">account_box</i>
+        <i class="material-icons">account_balance_wallet</i>
+        <i class="material-icons">account_balance</i>
+        <i class="material-icons">accessible</i>
+        <i class="material-icons">accessibility</i>
+        <i class="material-icons">3d_rotation</i>
+        <i class="material-icons">developer_mode</i>
+        <i class="material-icons">devices</i>
+        <i class="material-icons">dvr</i>
+        <i class="material-icons">gps_fixed</i>
+        <i class="material-icons">gps_not_fixed</i>
+        <i class="material-icons">gps_off</i>
+        <i class="material-icons">graphic_eq</i>
+        <i class="material-icons">location_disabled</i>
+        <i class="material-icons">location_searching</i>
+        <i class="material-icons">network_cell</i>
+        <i class="material-icons">network_wifi</i>
+        <i class="material-icons">nfc</i>
+        <i class="material-icons">screen_lock_landscape</i>
+        <i class="material-icons">screen_lock_portrait</i>
+        <i class="material-icons">screen_lock_rotation</i>
+        <i class="material-icons">screen_rotation</i>
+        <i class="material-icons">sd_storage</i>
+        <i class="material-icons">settings_system_daydream</i>
+        <i class="material-icons">signal_cellular_4_bar</i>
+        <i class="material-icons">signal_cellular_connected_no_internet_4_bar</i>
+        <i class="material-icons">signal_cellular_no_sim</i>
+        <i class="material-icons">signal_cellular_null</i>
+        <i class="material-icons">signal_cellular_off</i>
+        <i class="material-icons">camera_front</i>
+        <i class="material-icons">camera_alt</i>
+        <i class="material-icons">camera</i>
+        <i class="material-icons">burst_mode</i>
+        <i class="material-icons">brush</i>
+        <i class="material-icons">broken_image</i>
+        <i class="material-icons">brightness_7</i>
+        <i class="material-icons">brightness_6</i>
+        <i class="material-icons">brightness_5</i>
+        <i class="material-icons">brightness_4</i>
+        <i class="material-icons">brightness_3</i>
+        <i class="material-icons">brightness_2</i>
+        <i class="material-icons">brightness_1</i>
+        <i class="material-icons">blur_on</i>
+        <i class="material-icons">opacity</i>
+        <i class="material-icons">offline_pin</i>
+        <i class="material-icons">note_add</i>
+        <i class="material-icons">motorcycle</i>
+        <i class="material-icons">markunread_mailbox</i>
+        <i class="material-icons">loyalty</i>
+        <i class="material-icons">lock_outline</i>
+        <i class="material-icons">lock_open</i>
+        <i class="material-icons">content_cut</i>
+        <i class="material-icons">content_paste</i>
+        <i class="material-icons">create</i>
+        <i class="material-icons">delete_sweep</i>
+        <i class="material-icons">drafts</i>
+        <i class="material-icons">filter_list</i>
+        <i class="material-icons">flag</i>
+        <i class="material-icons">font_download</i>
+        <i class="material-icons">forward</i>
+        <i class="material-icons">gesture</i>
+        <i class="material-icons">inbox</i>
+        <i class="material-icons">link</i>
+        <i class="material-icons">low_priority</i>
+        <i class="material-icons">mail</i>
+        <i class="material-icons">markunread</i>
+        <i class="material-icons">move_to_inbox</i>
+        <i class="material-icons">next_week</i>
+        <i class="material-icons">redo</i>
+        <i class="material-icons">remove</i>
+        <i class="material-icons">remove_circle</i>
+        <i class="material-icons">remove_circle_outline</i>
+        <i class="material-icons">reply</i>
+        <i class="material-icons">reply_all</i>
+        <i class="material-icons">report</i>
+        <i class="material-icons">save</i>
+        <i class="material-icons">select_all</i>
+        <i class="material-icons">send</i>
+        <i class="material-icons">sort</i>
+        <i class="material-icons">question_answer</i>
+        <i class="material-icons">receipt</i>
+        <i class="material-icons">record_voice_over</i>
+        <i class="material-icons">redeem</i>
+        <i class="material-icons">visibility_off</i>
+        <i class="material-icons">camera_roll</i>
+        <i class="material-icons">center_focus_strong</i>
+        <i class="material-icons">center_focus_weak</i>
+        <i class="material-icons">lock</i>
+        <i class="material-icons">insert_invitation</i>
+        <i class="material-icons">insert_link</i>
+        <i class="material-icons">insert_photo</i>
+        <i class="material-icons">linear_scale</i>
+        <i class="material-icons">merge_type</i>
+        <i class="material-icons">mode_comment</i>
+        <i class="material-icons">mode_edit</i>
+        <i class="material-icons">monetization_on</i>
+        <i class="material-icons">money_off</i>
+        <i class="material-icons">multiline_chart</i>
+        <i class="material-icons">pie_chart</i>
+        <i class="material-icons">pie_chart_outlined</i>
+        <i class="material-icons">publish</i>
+        <i class="material-icons">short_text</i>
+        <i class="material-icons">show_chart</i>
+        <i class="material-icons">space_bar</i>
+        <i class="material-icons">strikethrough_s</i>
+        <i class="material-icons">text_fields</i>
+        <i class="material-icons">title</i>
+        <i class="material-icons">vertical_align_bottom</i>
+        <i class="material-icons">vertical_align_center</i>
+        <i class="material-icons">vertical_align_top</i>
+        <i class="material-icons">wrap_text</i>
+        <i class="material-icons">attachment</i>
+        <i class="material-icons">cloud</i>
+        <i class="material-icons">cloud_circle</i>
+        <i class="material-icons">cloud_done</i>
+        <i class="material-icons">cloud_download</i>
+        <i class="material-icons">cloud_off</i>
+        <i class="material-icons">cloud_queue</i>
+        <i class="material-icons">cloud_upload</i>
+        <i class="material-icons">create_new_folder</i>
+        <i class="material-icons">file_download</i>
+        <i class="material-icons">file_upload</i>
+        <i class="material-icons">folder</i>
+        <i class="material-icons">folder_open</i>
+        <i class="material-icons">folder_shared</i>
+        <i class="material-icons">cast</i>
+        <i class="material-icons">cast_connected</i>
+        <i class="material-icons">computer</i>
+        <i class="material-icons">desktop_mac</i>
+        <i class="material-icons">desktop_windows</i>
+        <i class="material-icons">developer_board</i>
+        <i class="material-icons">device_hub</i>
+        <i class="material-icons">devices_other</i>
+        <i class="material-icons">dock</i>
+        <i class="material-icons">gamepad</i>
+        <i class="material-icons">headset</i>
+        <i class="material-icons">headset_mic</i>
+        <i class="material-icons">keyboard</i>
+        <i class="material-icons">keyboard_arrow_down</i>
+        <i class="material-icons">keyboard_arrow_left</i>
+        <i class="material-icons">keyboard_arrow_right</i>
+        <i class="material-icons">keyboard_arrow_up</i>
+        <i class="material-icons">keyboard_backspace</i>
+        <i class="material-icons">keyboard_capslock</i>
+        <i class="material-icons">keyboard_hide</i>
+        <i class="material-icons">keyboard_return</i>
+        <i class="material-icons">keyboard_tab</i>
+        <i class="material-icons">keyboard_voice</i>
+        <i class="material-icons">laptop</i>
+        <i class="material-icons">laptop_chromebook</i>
+        <i class="material-icons">laptop_mac</i>
+        <i class="material-icons">laptop_windows</i>
+        <i class="material-icons">memory</i>
+        <i class="material-icons">mouse</i>
+        <i class="material-icons">phone_android</i>
+        <i class="material-icons">phone_iphone</i>
+        <i class="material-icons">phonelink</i>
+        <i class="material-icons">phonelink_off</i>
+        <i class="material-icons">power_input</i>
+        <i class="material-icons">router</i>
+        <i class="material-icons">scanner</i>
+        <i class="material-icons">security</i>
+        <i class="material-icons">sim_card</i>
+        <i class="material-icons">smartphone</i>
+        <i class="material-icons">speaker</i>
+        <i class="material-icons">speaker_group</i>
+        <i class="material-icons">tablet</i>
+        <i class="material-icons">tablet_android</i>
+        <i class="material-icons">tablet_mac</i>
+        <i class="material-icons">toys</i>
+        <i class="material-icons">tv</i>
+        <i class="material-icons">videogame_asset</i>
+        <i class="material-icons">watch</i>
+        <i class="material-icons">list</i>
+        <i class="material-icons">line_weight</i>
+        <i class="material-icons">line_style</i>
+        <i class="material-icons">lightbulb_outline</i>
+        <i class="material-icons">launch</i>
+        <i class="material-icons">language</i>
+        <i class="material-icons">label_outline</i>
+        <i class="material-icons">label</i>
+        <i class="material-icons">invert_colors</i>
+        <i class="material-icons">input</i>
+        <i class="material-icons">info_outline</i>
+        <i class="material-icons">info</i>
+        <i class="material-icons">important_devices</i>
+        <i class="material-icons">https</i>
+        <i class="material-icons">http</i>
+        <i class="material-icons">hourglass_full</i>
+        <i class="material-icons">hourglass_empty</i>
+        <i class="material-icons">home</i>
+        <i class="material-icons">fast_forward</i>
+        <i class="material-icons">fast_rewind</i>
+        <i class="material-icons">featured_play_list</i>
+        <i class="material-icons">featured_video</i>
+        <i class="material-icons">fiber_dvr</i>
+        <i class="material-icons">fiber_manual_record</i>
+        <i class="material-icons">fiber_new</i>
+        <i class="material-icons">fiber_pin</i>
+        <i class="material-icons">fiber_smart_record</i>
+        <i class="material-icons">forward_10</i>
+        <i class="material-icons">forward_30</i>
+        <i class="material-icons">forward_5</i>
+        <i class="material-icons">games</i>
+        <i class="material-icons">hd</i>
+        <i class="material-icons">hearing</i>
+        <i class="material-icons">high_quality</i>
+        <i class="material-icons">library_add</i>
+        <i class="material-icons">library_books</i>
+        <i class="material-icons">library_music</i>
+        <i class="material-icons">loop</i>
+        <i class="material-icons">mic</i>
+        <i class="material-icons">mic_none</i>
+        <i class="material-icons">mic_off</i>
+        <i class="material-icons">movie</i>
+        <i class="material-icons">music_video</i>
+        <i class="material-icons">new_releases</i>
+        <i class="material-icons">not_interested</i>
+        <i class="material-icons">note</i>
+        <i class="material-icons">pause</i>
+        <i class="material-icons">pause_circle_filled</i>
+        <i class="material-icons">pause_circle_outline</i>
+        <i class="material-icons">play_arrow</i>
+        <i class="material-icons">play_circle_filled</i>
+        <i class="material-icons">play_circle_outline</i>
+        <i class="material-icons">playlist_add</i>
+        <i class="material-icons">playlist_add_check</i>
+        <i class="material-icons">playlist_play</i>
+        <i class="material-icons">queue</i>
+        <i class="material-icons">queue_music</i>
+        <i class="material-icons">queue_play_next</i>
+        <i class="material-icons">radio</i>
+        <i class="material-icons">recent_actors</i>
+        <i class="material-icons">remove_from_queue</i>
+        <i class="material-icons">repeat</i>
+        <i class="material-icons">repeat_one</i>
+        <i class="material-icons">replay</i>
+        <i class="material-icons">replay_10</i>
+        <i class="material-icons">replay_30</i>
+        <i class="material-icons">replay_5</i>
+        <i class="material-icons">shuffle</i>
+        <i class="material-icons">skip_next</i>
+        <i class="material-icons">skip_previous</i>
+        <i class="material-icons">slow_motion_video</i>
+        <i class="material-icons">snooze</i>
+        <i class="material-icons">sort_by_alpha</i>
+        <i class="material-icons">stop</i>
+        <i class="material-icons">subscriptions</i>
+        <i class="material-icons">subtitles</i>
+        <i class="material-icons">surround_sound</i>
+        <i class="material-icons">video_call</i>
+        <i class="material-icons">video_label</i>
+        <i class="material-icons">video_library</i>
+        <i class="material-icons">videocam</i>
+        <i class="material-icons">videocam_off</i>
+        <i class="material-icons">volume_down</i>
+        <i class="material-icons">volume_mute</i>
+        <i class="material-icons">volume_off</i>
+        <i class="material-icons">volume_up</i>
+        <i class="material-icons">web</i>
+        <i class="material-icons">web_asset</i>
+        <i class="material-icons">business</i>
+        <i class="material-icons">call</i>
+        <i class="material-icons">call_end</i>
+        <i class="material-icons">call_made</i>
+        <i class="material-icons">call_merge</i>
+        <i class="material-icons">call_missed</i>
+        <i class="material-icons">call_missed_outgoing</i>
+        <i class="material-icons">call_received</i>
+        <i class="material-icons">call_split</i>
+        <i class="material-icons">chat</i>
+        <i class="material-icons">chat_bubble</i>
+        <i class="material-icons">chat_bubble_outline</i>
+        <i class="material-icons">clear_all</i>
+        <i class="material-icons">comment</i>
+        <i class="material-icons">contact_mail</i>
+        <i class="material-icons">contact_phone</i>
+        <i class="material-icons">contacts</i>
+        <i class="material-icons">dialer_sip</i>
+        <i class="material-icons">dialpad</i>
+        <i class="material-icons">email</i>
+        <i class="material-icons">forum</i>
+        <i class="material-icons">import_contacts</i>
+        <i class="material-icons">import_export</i>
+        <i class="material-icons">invert_colors_off</i>
+        <i class="material-icons">live_help</i>
+        <i class="material-icons">location_off</i>
+        <i class="material-icons">location_on</i>
+        <i class="material-icons">mail_outline</i>
+        <i class="material-icons">message</i>
+        <i class="material-icons">no_sim</i>
+        <i class="material-icons">phone</i>
+        <i class="material-icons">phonelink_erase</i>
+        <i class="material-icons">phonelink_lock</i>
+        <i class="material-icons">phonelink_ring</i>
+        <i class="material-icons">phonelink_setup</i>
+        <i class="material-icons">portable_wifi_off</i>
+        <i class="material-icons">present_to_all</i>
+        <i class="material-icons">ring_volume</i>
+        <i class="material-icons">rss_feed</i>
+        <i class="material-icons">screen_share</i>
+        <i class="material-icons">speaker_phone</i>
+        <i class="material-icons">stay_current_landscape</i>
+        <i class="material-icons">stay_current_portrait</i>
+        <i class="material-icons">stay_primary_landscape</i>
+        <i class="material-icons">stay_primary_portrait</i>
+        <i class="material-icons">stop_screen_share</i>
+        <i class="material-icons">swap_calls</i>
+        <i class="material-icons">textsms</i>
+        <i class="material-icons">voicemail</i>
+        <i class="material-icons">vpn_key</i>
+        <i class="material-icons">add</i>
+        <i class="material-icons">add_box</i>
+        <i class="material-icons">add_circle</i>
+        <i class="material-icons">add_circle_outline</i>
+        <i class="material-icons">archive</i>
+        <i class="material-icons">backspace</i>
+        <i class="material-icons">block</i>
+        <i class="material-icons">clear</i>
+        <i class="material-icons">content_copy</i>
+      </section>
+<!-- Material Icons -->
+
+        
+
+    </article>
+</main>
+<!-- MAIN: END -->
+
+<!-- DEV SCRIPTS: START -->
+    <script src="https://load.sheetsu.com"></script>
+    <script src="../../js/oneezy-js.js"></script>
+<!-- DEV SCRIPTS: END -->
+
+<!-- PRODUCTION SCRIPTS: START -->
+    <!-- build:js js/scripts.min.js -->
+    <!-- endbuild  -->
+<!-- PRODUCTION SCRIPTS: END -->
+
+  </body>
+</html>

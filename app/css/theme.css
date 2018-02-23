@@ -23,6 +23,7 @@
 @import "https://rawgit.com/oneezy/oneezy-js/master/components/data-animate/data-animate.css";
 @import "https://rawgit.com/oneezy/oneezy-js/master/components/mdc-accordion/mdc-accordion.css";
 @import "https://rawgit.com/oneezy/oneezy-js/master/components/mdc-table/mdc-table.css";
+@import "../components/mdc-forms/mdc-forms.css";
 
 
 :root { 

@@ -1,61 +1,178 @@
+<!-- 
+    Google Sheet (Sheetsu): https://docs.google.com/spreadsheets/d/1usBNuTwxFa-aHq37twbLvp3IKEkn7jP61Rn7upe6L7M/edit#gid=0
+-->
+
 <!DOCTYPE html>
-<html class="mdc-typography">
+<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" class="oneezy">
+
+<!-- HEAD: START -->
   <head>
-    <meta charset="utf-8">
-    <title>DATA Bind</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../oneezy-js.css">
+    <title>Oneezy JS</title>
+    <meta name="description" content="Oneezy JS">
+    <meta name="keywords" content="oneezy js, oneezy-js, oneezy">
 
-    <style>
-            
-        main        { background: transparent; margin: 0 2rem 2rem !important; }
-        section     { display: flex; flex-direction: column; width: 22%; background: white; margin: 1rem; padding: 1rem; }
-        strong      { display: inline-block; min-width: 80px; }
-        button      { margin: 1rem 0; }
-        h2          { margin: 1rem 0; }
-        p           { font-size: 14px; text-align: justify; }
-        h1 a        { color: skyblue; }
+    <div data-ajax="../../partials/head-meta.html"></div>
 
-        .CodeMirror { height: auto; }
-        .wrapper    { width: 100%; background: transparent; }
-        .binding    { border: 2px dotted silver; padding: 1rem; background: #eee; }
-        
-    </style>
+    <!-- DEMO STYLES: START -->
+        <style>
+            * { margin: 0; padding: 0; box-sizing: border-box; }
+            body { background: #f2f2f2; }
+            textarea { max-width: 100%; padding: .5rem; border: 1px solid black; border-radius: 4px; overflow: hidden; }
+            [disabled] { opacity: .34; }
+
+            /* Main 
+            **********************************/
+            .main { background: #f2f2f2; border-top: 1px solid rgba(0,0,0,.078); }
+            .main section     { display: flex; flex-direction: column; flex-wrap: wrap; flex: 1; min-width: 220px; background: white; margin: 1rem; padding: 1rem; }
+
+            /* Binding 
+            **********************************/
+            .binding-example { border: 2px dotted gray; background: #f2f2f2; padding: 1rem; margin: 0 0 2rem; }
+            .working .binding-example { background: #B9F6CA; color: #00C853; }
+            .broke .binding-example { background: #FCE4EC; color: #F50057; }
+
+
+        </style>
+    <!-- DEMO STYLES: END -->
+
+    <!-- build:css css/styles.min.css -->
+    <link rel="stylesheet" href="../../css/theme.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- endbuild -->
   </head>
-  
-  <body class="mdc-typography">
+<!-- HEAD: END -->
 
-    <!-- DATA Bind
-    --------------------------------------------- -->
-    <h1 class="flex-horizontal between-center">DATA Bind</h1>
-    <main class="flex-vertical start-start wrap">
+  <body class="flex-vertical mdc-typography">
 
-        <!-- DATA Bind
-        =============================== -->
-        <h2 class="margin-t-3 margin-l-3 padding-t-3">Data Bind</h2>
+<!-- HEADER: START -->
+    <header class="mdc-toolbar mdc-toolbar--fixed" data-ajax="../../partials/header.html"></header>
+<!-- HEADER: END -->
 
-        <div class="wrapper flex-horizontal start-start wrap">
+<!-- NAVIGATION: START -->
+    <aside class="mdc-drawer mdc-drawer--temporary mdc-typography">
+        <nav class="mdc-drawer__drawer">
+            <nav id="icon-with-text-demo" class="mdc-drawer__content mdc-list">
+                                
+                <div class="mdc-list-group" sheetsu="https://sheetsu.com/apis/v1.0su/b1990aff7e3e">
 
-        <!-- Bind -->
-        <section data-code="htmlmixed">
+                    {{HTML}}
+                    
+                    <ul class="mdc-list mdc-list--one-line mdc-list--avatar-list">
+                        <li class="mdc-list-item" data-mdc-auto-init="MDCRipple">
+                            <span class="mdc-list-item__graphic" role="presentation">
+                                <i class="material-icons" aria-hidden="true">{{ICON}}</i>
+                            </span>
+                            <a href="{{LINK}}" class="mdc-list-item__text">{{LABEL}}</a>
+                        </li>
+                    </ul>
 
-        <div class="binding" bind="any_name">This div's content will be replaced when you edit the input below</div>
-        <input class="margin-y-1" type="text" placeholder="First input with same bind value" bind="any_name" />
+                </div> 
                 
-        </section>
+            </nav>
+        </nav>
+    </aside>
+<!-- NAVIGATION: END -->
 
-        <!-- Bind -->
-        <section data-code="htmlmixed">
-                
-        <div class="binding" bind="another_name">This div's content will be replaced when you edit the input below</div>
-        <input class="margin-y-1" type="text" placeholder="First input with same bind value" bind="another_name" />
-                
-        </section>
+<!-- MAIN: START -->
+<main class="flex-vertical mdc-toolbar-fixed-adjust">
 
+    <!-- MAIN -->
+    <article class="flex-horizontal center-start wrap main">
+
+
+    <!-- Working -->
+    <section data-title="Inputs"
+            class="mdc-card working"
+            sheetsu="https://sheetsu.com/apis/v1.0su/f64238fdcb17" 
+            sheetsu-sheet="mdc-forms" 
+            sheetsu-search='{"FILE": "data-bind-working"}'>
+
+        <div data-form
+            data-wrapper--if="{{wrapperIF}}"
+            data-wrapper--init="{{wrapperINIT}}"
+            data-wrapper--class="{{wrapperCLASS}}"
+
+            data-input--type="{{inputTYPE}}"
+            data-input--id="{{inputID}}"
+            data-input--name="{{inputNAME}}"
+            data-input--autocomplete="{{inputAUTO}}"
+            data-input--min="{{inputMIN}}"
+            data-input--max="{{inputMAX}}"
+            data-input--step="{{inputSTEP}}"
+            data-input--value="{{inputVALUE}}"
+            data-input--aria="{{inputARIA}}"
+            data-input--checked="{{inputCHECKED}}"
+            data-input--required="{{inputREQUIRED}}"
+            data-input--disabled="{{inputDISABLED}}"
+
+            data-label--text="{{labelTEXT}}"
+            data-label--icon="{{labelICON}}"
+
+            data-message--text="{{messageTEXT}}"
+            data-message--class="{{messageCLASS}}">
         </div>
 
-    </main>
+        <p class="binding-example">
+            <span data-bind="{{inputID}}">{{inputVALUE}}</span>
+        </p>
+    </section>
+    <!-- Working -->
 
-    <script src="../oneezy-js.js"></script>
-    </body>
+
+
+    <!-- Broke -->
+    <section data-title="Inputs"
+            class="mdc-card broke"
+            sheetsu="https://sheetsu.com/apis/v1.0su/f64238fdcb17" 
+            sheetsu-sheet="mdc-forms" 
+            sheetsu-search='{"FILE": "data-bind-broke"}'>
+
+        <div data-form
+            data-wrapper--if="{{wrapperIF}}"
+            data-wrapper--init="{{wrapperINIT}}"
+            data-wrapper--class="{{wrapperCLASS}}"
+
+            data-input--type="{{inputTYPE}}"
+            data-input--id="{{inputID}}"
+            data-input--name="{{inputNAME}}"
+            data-input--autocomplete="{{inputAUTO}}"
+            data-input--min="{{inputMIN}}"
+            data-input--max="{{inputMAX}}"
+            data-input--step="{{inputSTEP}}"
+            data-input--value="{{inputVALUE}}"
+            data-input--aria="{{inputARIA}}"
+            data-input--checked="{{inputCHECKED}}"
+            data-input--required="{{inputREQUIRED}}"
+            data-input--disabled="{{inputDISABLED}}"
+
+            data-label--text="{{labelTEXT}}"
+            data-label--icon="{{labelICON}}"
+
+            data-message--text="{{messageTEXT}}"
+            data-message--class="{{messageCLASS}}">
+        </div>
+
+        <p class="binding-example">
+            <span data-bind="{{inputID}}">{{inputVALUE}}</span>
+        </p>
+    </section>
+    <!-- Broke -->
+
+
+        
+
+    </article>
+</main>
+<!-- MAIN: END -->
+
+<!-- DEV SCRIPTS: START -->
+    <script src="https://load.sheetsu.com"></script>
+    <script src="../../js/oneezy-js.js"></script>
+<!-- DEV SCRIPTS: END -->
+
+<!-- PRODUCTION SCRIPTS: START -->
+    <!-- build:js js/scripts.min.js -->
+    <!-- endbuild  -->
+<!-- PRODUCTION SCRIPTS: END -->
+  </body>
 </html>

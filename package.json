@@ -30,6 +30,7 @@
     "run-sequence": "^1.2.2"
   },
   "dependencies": {
+    "@material/switch": "^0.31.0",
     "material-components-web": "^0.30.0"
   }
 }

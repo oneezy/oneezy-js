@@ -1,22 +1,35 @@
-// Load Sheetsu
+// Navigation Data (Sheetsu)
 function navigationLINKS() {
     return $.ajax({
         url: "https://sheetsu.com/apis/v1.0su/b1990aff7e3e"
     });
 }
 
-// When Ready...
+// Form Data (Sheetsu)
+function loadFORMS() {
+    return $.ajax({
+        url: "https://sheetsu.com/apis/v1.0su/f64238fdcb17"
+    });
+}
+
+// When ready...
 $(document).ready(function() {
 
+    // Run these functions first
     dataAJAX();
 
-    $.when( dataAJAX(), navigationLINKS() ).done(function(){
+    // When data is finished loading...
+    $.when( dataAJAX(), navigationLINKS(), loadFORMS() ).done(function(){
         setTimeout(function(){
 
-            // All functions=
+            // Run these functions next
             mdcTOOLBAR();
-            dataBind();
-            initCodeMirror();
+            dataTABS();
+            mdcFORMS();
+            dataTITLE();
+            dataBIND();
+            dataCLIPBOARD();
+            // Initialize UI last
             mdc.autoInit();
 
         }, 1000);
