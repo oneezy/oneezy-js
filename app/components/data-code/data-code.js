@@ -23,7 +23,7 @@
 
 /* WORKING: Initialize Code Mirror
 ***********************************/
-function initCodeMirror() {
+function dataCODE() {
   
     var codeEDITOR = document.getElementsByClassName("code");
     var dataCODE   = $(this).data("code");
@@ -54,12 +54,3 @@ function initCodeMirror() {
     });
   
   }
-  
-  
-  $(document).ready(function() {
-
-    setTimeout(function() {
-      initCodeMirror();
-    }, 250);
-
-  });

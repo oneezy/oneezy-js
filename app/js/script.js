@@ -32,6 +32,7 @@ $(document).ready(function() {
             dataCHART();
             dataCOUNT();
             dataACCORDION();
+            // dataCODE();
             // Initialize UI last
             mdc.autoInit();
 
@@ -42,6 +43,7 @@ $(document).ready(function() {
 });
 
 
-$( "input, textarea" ).change(function() {
+$( "[data-bind], input, textarea" ).on('change keyup keydown mousemove mousedown mouseup', function() {
+    dataBIND();
     dataCOUNT();
 });

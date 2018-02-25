@@ -15,6 +15,7 @@ Oneezy JS (JS)
   *************************/
   "../data-ajax/data-ajax.js",
   "../data-accordion/data-accordion.js",
+  // "../data-code/data-code.js",
   "../data-count/data-count.js",
   // "../data-clone/data-clone.js",
   // "../data-animate/data-animate.js",

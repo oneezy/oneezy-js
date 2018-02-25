@@ -65,7 +65,7 @@
 /* Universal */
 header a { color: white; }
 main section { background: #fff; margin: 2rem 0; padding: 1rem; }
-main code { padding: 1rem;  }
+main code {  }
 
 header .logo-icon { width: 60px; margin: 0 0 0 1rem; transform: translateX(16px); }
 main .logo-icon { width: 100%; padding: 0 10%; }
