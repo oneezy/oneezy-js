@@ -1,4 +1,4 @@
-# Oneezy JS
+# Oneezy JS (deprecated)
 My personal collection of commonly used javascript.
 
 - Jquery
